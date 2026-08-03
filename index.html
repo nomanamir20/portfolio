@@ -1,10 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Muhammad Noman Amir</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muhammad Noman Amir | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h2{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    max-width:750px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#2563eb;
+    color:white;
+    padding:14px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    margin-bottom:25px;
+    color:#0f172a;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:white;
+    padding:12px 18px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+
 </head>
-<body style="font-family:Arial;text-align:center;margin-top:120px;">
-    <h1>Muhammad Noman Amir</h1>
-    <p>Portfolio coming soon...</p>
+
+<body>
+
+<header>
+
+<h2>Noman Amir</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Muhammad Noman Amir</h1>
+
+<p>
+Computer Science Student passionate about Artificial Intelligence,
+Machine Learning, Flutter Development and Backend Systems.
+Currently building AI-powered applications and modern software solutions.
+</p>
+
+<a class="btn" href="#">View Projects</a>
+
+</section>
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+I'm a BS Computer Science student at COMSATS University Islamabad, Wah Campus.
+I enjoy solving real-world problems using AI, Flutter, Python and Web Technologies.
+My interests include Machine Learning, Mobile App Development,
+Backend Systems and Cloud Computing.
+</p>
+
+</section>
+
+<section>
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Flutter</div>
+<div class="skill">PHP</div>
+<div class="skill">MongoDB</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">GitHub</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>AI Disaster Alert App</h3>
+<p>
+Flutter application for disaster reporting, emergency alerts,
+live location and shelter information.
+</p>
+<a href="#">View Project</a>
+</div>
+
+<div class="card">
+<h3>Plant Disease Detection</h3>
+<p>
+Machine Learning project using TensorFlow and Flask to identify
+plant diseases from leaf images.
+</p>
+<a href="#">View Project</a>
+</div>
+
+<div class="card">
+<h3>Personal Portfolio</h3>
+<p>
+Responsive portfolio website showcasing projects, skills and achievements.
+</p>
+<a href="#">View Project</a>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<p>Email: your-email@example.com</p>
+
+<p>GitHub: https://github.com/nomanamir20</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Muhammad Noman Amir. All Rights Reserved.</p>
+
+</footer>
+
 </body>
 </html>
