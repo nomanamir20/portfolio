@@ -4,52 +4,115 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact | Muhammad Noman Amir</title>
 
 <style>
 
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f5f7fb;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f7fb;
 color:#222;
 }
 
 header{
 background:#0f172a;
-padding:20px;
+padding:18px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header a{
+header h2{
+color:white;
+}
+
+nav a{
 color:white;
 text-decoration:none;
+margin-left:20px;
 font-weight:bold;
 }
 
-.container{
-width:90%;
-max-width:800px;
-margin:50px auto;
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:70px 10%;
+max-width:900px;
+margin:auto;
 }
 
 h1{
+margin-bottom:20px;
 color:#0f172a;
+text-align:center;
 }
 
-.info{
-margin:20px 0;
-line-height:2;
+p{
+margin-bottom:25px;
+line-height:1.8;
+text-align:center;
 }
 
-.info strong{
-display:inline-block;
-width:100px;
+.contact-links{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.contact-btn{
+
+background:#2563eb;
+
+color:white;
+
+padding:14px 24px;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+background:#1d4ed8;
+
+}
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:70px;
+
 }
 
 </style>
@@ -60,31 +123,84 @@ width:100px;
 
 <header>
 
-<a href="index.html">← Home</a>
+<h2>Noman Amir</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="projects.html">Projects</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
 
 </header>
 
-<div class="container">
+<section>
 
 <h1>Contact Me</h1>
 
 <p>
-If you'd like to collaborate, discuss a project, or connect professionally, feel free to reach out.
+
+I'm always open to discussing new opportunities, collaboration,
+internships, or interesting software projects.
+
+Feel free to connect with me through the platforms below.
+
 </p>
 
-<div class="info">
+<div class="contact-links">
 
-<p><strong>Name:</strong> Muhammad Noman Amir</p>
+<a class="contact-btn" href="mailto:nomanamir664@gmail.com">
 
-<p><strong>Email:</strong> nomanamir664@gmail.com</p>
+📧 Email
 
-<p><strong>GitHub:</strong> https://github.com/nomanamir20</p>
+</a>
 
-<p><strong>Location:</strong> Wah Cantt, Pakistan</p>
+<a class="contact-btn"
+href="https://github.com/nomanamir20"
+target="_blank">
+
+💻 GitHub
+
+</a>
+
+<a class="contact-btn"
+href="#"
+target="_blank">
+
+💼 LinkedIn
+
+</a>
+
+<a class="contact-btn"
+href="resume.pdf"
+target="_blank">
+
+📄 Resume
+
+</a>
+
+<a class="contact-btn"
+href="#"
+target="_blank">
+
+📅 Book a Meeting
+
+</a>
 
 </div>
 
-</div>
+</section>
+
+<footer>
+
+<p>© 2026 Muhammad Noman Amir. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 
