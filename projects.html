@@ -1,69 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Projects | Muhammad Noman Amir</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f7fb;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#222;
 }
 
 header{
 background:#0f172a;
-padding:20px;
+padding:18px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header a{
+header h2{
+color:white;
+}
+
+nav a{
 color:white;
 text-decoration:none;
+margin-left:20px;
 font-weight:bold;
 }
 
-.container{
-width:90%;
-max-width:1100px;
-margin:50px auto;
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:70px 10%;
 }
 
 h1{
-text-align:center;
 margin-bottom:40px;
+color:#0f172a;
+text-align:center;
 }
 
-.grid{
+.projects{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:25px;
 }
 
 .card{
+
 background:white;
+
 padding:25px;
+
 border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
 }
 
 .card h2{
-margin-top:0;
+
+margin-bottom:15px;
+
+color:#2563eb;
+
+font-size:24px;
+
 }
 
-.button{
+.card p{
+
+margin-bottom:15px;
+
+line-height:1.7;
+
+}
+
+.tech{
+
+font-size:14px;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.btn{
+
 display:inline-block;
-margin-top:20px;
-padding:10px 20px;
+
+padding:10px 18px;
+
 background:#2563eb;
+
 color:white;
+
 text-decoration:none;
+
 border-radius:6px;
+
 }
 
-.button:hover{
+.btn:hover{
+
 background:#1d4ed8;
+
+}
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:50px;
+
 }
 
 </style>
@@ -74,25 +144,48 @@ background:#1d4ed8;
 
 <header>
 
-<a href="index.html">← Home</a>
+<h2>Noman Amir</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="projects.html">Projects</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
 
 </header>
 
-<div class="container">
+<section>
 
 <h1>My Projects</h1>
 
-<div class="grid">
+<div class="projects">
 
 <div class="card">
 
 <h2>AI Disaster Alert App</h2>
 
 <p>
-A Flutter-based disaster early warning mobile application designed for Pakistan. It provides emergency alerts, incident reporting, shelter locations and real-time notifications.
+
+A Flutter-based mobile application that allows users to report disasters, receive emergency alerts, share live locations, and locate nearby shelters.
+
 </p>
 
-<a class="button" href="disaster-alert-app.html">View Details</a>
+<div class="tech">
+
+<strong>Technologies:</strong>
+
+Flutter • Firebase • Google Maps
+
+</div>
+
+<a href="#" class="btn">Coming Soon</a>
+
 </div>
 
 <div class="card">
@@ -100,10 +193,20 @@ A Flutter-based disaster early warning mobile application designed for Pakistan.
 <h2>Plant Disease Detection</h2>
 
 <p>
-Machine Learning system that detects plant diseases using TensorFlow, Flask and image classification techniques.
+
+Machine Learning project capable of detecting plant diseases from leaf images using image classification techniques.
+
 </p>
 
-<a class="button" href="#">View Details</a>
+<div class="tech">
+
+<strong>Technologies:</strong>
+
+TensorFlow • Flask • Python
+
+</div>
+
+<a href="#" class="btn">Coming Soon</a>
 
 </div>
 
@@ -112,16 +215,33 @@ Machine Learning system that detects plant diseases using TensorFlow, Flask and 
 <h2>Personal Portfolio</h2>
 
 <p>
-A responsive portfolio website showcasing my projects, technical skills and academic journey.
+
+A responsive portfolio website built using HTML and CSS to showcase my skills, projects, and future work.
+
 </p>
 
-<a class="button" href="plant-disease-detection.html">View Details</a>
+<div class="tech">
+
+<strong>Technologies:</strong>
+
+HTML • CSS • GitHub Pages
+
+</div>
+
+<a href="#" class="btn">Current Project</a>
 
 </div>
 
 </div>
 
-</div>
+</section>
+
+<footer>
+
+<p>© 2026 Muhammad Noman Amir. All Rights Reserved.</p>
+
+</footer>
 
 </body>
+
 </html>
