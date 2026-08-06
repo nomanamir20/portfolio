@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,130 +10,127 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f4f7fb;
-color:#222;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
 }
 
 header{
-background:#0f172a;
-padding:18px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    background:#0f172a;
+    color:white;
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 header h2{
-color:white;
+    font-size:24px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
 }
 
 nav a:hover{
-color:#38bdf8;
+    color:#38bdf8;
+}
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    color:#555;
+    max-width:700px;
+    margin:auto;
 }
 
 section{
-padding:70px 10%;
-}
-
-h1{
-margin-bottom:40px;
-color:#0f172a;
-text-align:center;
+    padding:70px 10%;
 }
 
 .projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
 }
 
 .card{
-
-background:white;
-
-padding:25px;
-
-border-radius:10px;
-
-box-shadow:0 3px 10px rgba(0,0,0,.08);
-
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
-.card h2{
+.card:hover{
+    transform:translateY(-6px);
+}
 
-margin-bottom:15px;
-
-color:#2563eb;
-
-font-size:24px;
-
+.card h3{
+    color:#0f172a;
+    margin-bottom:15px;
 }
 
 .card p{
-
-margin-bottom:15px;
-
-line-height:1.7;
-
+    color:#555;
+    margin-bottom:20px;
 }
 
 .tech{
+    margin-bottom:20px;
+}
 
-font-size:14px;
-
-color:#666;
-
-margin-bottom:20px;
-
+.tech span{
+    display:inline-block;
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:14px;
+    margin:5px;
 }
 
 .btn{
-
-display:inline-block;
-
-padding:10px 18px;
-
-background:#2563eb;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:6px;
-
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .btn:hover{
-
-background:#1d4ed8;
-
+    background:#1d4ed8;
 }
 
 footer{
-
-background:#0f172a;
-
-color:white;
-
-text-align:center;
-
-padding:25px;
-
-margin-top:50px;
-
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 
 </style>
@@ -147,88 +144,165 @@ margin-top:50px;
 <h2>Noman Amir</h2>
 
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="about.html">About</a>
-
 <a href="projects.html">Projects</a>
-
 <a href="contact.html">Contact</a>
-
 </nav>
 
 </header>
 
-<section>
+<section class="hero">
 
 <h1>My Projects</h1>
 
+<p>
+Here are some of my academic, internship, and personal projects that demonstrate
+my interest in Artificial Intelligence, Mobile App Development, Machine Learning,
+and Software Engineering.
+</p>
+
+</section>
+
+<section>
+
 <div class="projects">
 
-<div class="card">
-
-<h2>AI Disaster Alert App</h2>
-
-<p>
-
-A Flutter-based mobile application that allows users to report disasters, receive emergency alerts, share live locations, and locate nearby shelters.
-
-</p>
-
-<div class="tech">
-
-<strong>Technologies:</strong>
-
-Flutter • Firebase • Google Maps
-
-</div>
-
-<a href="#" class="btn">Coming Soon</a>
-
-</div>
+<!-- Project 1 -->
 
 <div class="card">
 
-<h2>Plant Disease Detection</h2>
+<h3>AI Disaster Alert App</h3>
 
 <p>
-
-Machine Learning project capable of detecting plant diseases from leaf images using image classification techniques.
-
+An AI-powered disaster early warning application developed for Pakistan.
+The project focuses on emergency reporting, disaster alerts, and improving
+public safety through intelligent technologies.
 </p>
 
 <div class="tech">
+<span>Python</span>
+<span>AI</span>
+<span>Disaster Management</span>
+</div>
 
-<strong>Technologies:</strong>
+<a href="https://github.com/nomanamir20/disaster-alert-app"
+target="_blank"
+class="btn">
 
-TensorFlow • Flask • Python
+View on GitHub
+
+</a>
 
 </div>
 
-<a href="#" class="btn">Coming Soon</a>
-
-</div>
+<!-- Project 2 -->
 
 <div class="card">
 
-<h2>Personal Portfolio</h2>
+<h3>InternGrow Auth Onboarding App</h3>
 
 <p>
-
-A responsive portfolio website built using HTML and CSS to showcase my skills, projects, and future work.
-
+A Flutter application created during the InternGrow Internship that
+implements user authentication, onboarding screens, and a clean
+mobile user experience.
 </p>
 
 <div class="tech">
+<span>Flutter</span>
+<span>Dart</span>
+<span>Firebase</span>
+</div>
 
-<strong>Technologies:</strong>
+<a href="https://github.com/nomanamir20/InternGrow_AuthOnboardingApp"
+target="_blank"
+class="btn">
 
-HTML • CSS • GitHub Pages
+View on GitHub
+
+</a>
 
 </div>
 
-<a href="#" class="btn">Current Project</a>
+<!-- Project 3 -->
+
+<div class="card">
+
+<h3>AI-Powered Mental Health Journal</h3>
+
+<p>
+A personal AI-assisted journal application that helps users record
+thoughts, emotions, and daily experiences while promoting mental wellness.
+</p>
+
+<div class="tech">
+<span>AI</span>
+<span>Python</span>
+<span>Healthcare</span>
+</div>
+
+<a href="https://github.com/nomanamir20/AI-Powered-Mental-Health-Journal"
+target="_blank"
+class="btn">
+
+View on GitHub
+
+</a>
+
+</div>
+
+<!-- Project 4 -->
+
+<div class="card">
+
+<h3>FlyRank ML Internship</h3>
+
+<p>
+Machine Learning tasks completed during the FlyRank AI Internship,
+covering practical data preprocessing, feature engineering,
+model training, and AI experimentation.
+</p>
+
+<div class="tech">
+<span>Machine Learning</span>
+<span>Python</span>
+<span>Jupyter Notebook</span>
+</div>
+
+<a href="https://github.com/nomanamir20/flyrank-ml-internship"
+target="_blank"
+class="btn">
+
+View on GitHub
+
+</a>
+
+</div>
+
+<!-- Project 5 -->
+
+<div class="card">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+A responsive personal portfolio website built using HTML and CSS to
+showcase my projects, skills, internship work, and professional journey.
+</p>
+
+<div class="tech">
+<span>HTML</span>
+<span>CSS</span>
+<span>GitHub Pages</span>
+</div>
+
+<a href="https://github.com/nomanamir20/portfolio"
+target="_blank"
+class="btn">
+
+View on GitHub
+
+</a>
 
 </div>
 
