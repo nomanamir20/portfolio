@@ -155,6 +155,31 @@ footer{
     text-align:center;
     padding:25px;
 }
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact-links{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+}
+
+.contact-btn{
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.contact-btn:hover{
+    background:#1d4ed8;
+}
+    
 </style>
 
 </head>
@@ -270,13 +295,38 @@ Responsive portfolio website showcasing projects, skills and achievements.
 
 </section>
 
-<section>
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email:nomanamir664@gmail.com.com</p>
+<p>
+If you'd like to collaborate, discuss projects, or connect professionally,
+feel free to reach out through any of the platforms below.
+</p>
 
-<p>GitHub: https://github.com/nomanamir20</p>
+<div class="contact-links">
+
+<a href="mailto:nomanamir664@gmail.com" class="contact-btn">
+📧 Email Me
+</a>
+
+<a href="https://github.com/nomanamir20" target="_blank" class="contact-btn">
+💻 GitHub
+</a>
+
+<a href="#" target="_blank" class="contact-btn">
+💼 LinkedIn
+</a>
+
+<a href="resume.pdf" target="_blank" class="contact-btn">
+📄 Download CV
+</a>
+
+<a href="#" target="_blank" class="contact-btn">
+📅 Book a Meeting
+</a>
+
+</div>
 
 </section>
 
