@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,68 +11,108 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f4f7fb;
-color:#222;
-line-height:1.7;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
 }
 
 header{
-background:#0f172a;
-padding:18px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    background:#0f172a;
+    color:white;
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 header h2{
-color:white;
+    font-size:24px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
 }
 
 nav a:hover{
-color:#38bdf8;
+    color:#38bdf8;
+}
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    color:#555;
+    max-width:800px;
+    margin:auto;
 }
 
 section{
-padding:70px 10%;
-max-width:1000px;
-margin:auto;
+    padding:70px 10%;
 }
 
-h1{
-color:#0f172a;
-margin-bottom:20px;
+.section-title{
+    font-size:32px;
+    color:#0f172a;
+    margin-bottom:30px;
 }
 
-h2{
-margin-top:35px;
-margin-bottom:15px;
-color:#2563eb;
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
+    transition:.3s;
 }
 
-ul{
-padding-left:20px;
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:bold;
 }
 
 footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 
 </style>
@@ -94,51 +136,175 @@ margin-top:50px;
 
 </header>
 
-<section>
+<section class="hero">
 
 <h1>About Me</h1>
 
 <p>
-Hello! I'm Muhammad Noman Amir, a BS Computer Science student at COMSATS University Islamabad, Wah Campus.
-I enjoy building practical software solutions using Artificial Intelligence, Flutter, Web Technologies, and Backend Development.
+
+Hello! I'm <strong>Muhammad Noman Amir</strong>, a passionate Computer Science student
+at COMSATS University Islamabad, Wah Campus. I enjoy building intelligent
+software solutions using Artificial Intelligence, Flutter, Python, and modern
+web technologies. I love learning new technologies and solving real-world problems
+through software engineering.
+
 </p>
 
-<h2>Education</h2>
+</section>
+
+<section>
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+
+<h3>BS Computer Science</h3>
 
 <p>
-Bachelor of Science in Computer Science<br>
-COMSATS University Islamabad, Wah Campus
+
+<strong>COMSATS University Islamabad</strong><br>
+Wah Campus<br><br>
+
+2023 – Present<br>
+Current Semester: 6th Semester
+
 </p>
 
-<h2>Technical Interests</h2>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="card">
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Flutter</div>
+<div class="skill">PHP</div>
+<div class="skill">MongoDB</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">Firebase</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Artificial Intelligence</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Internship Experience</h2>
+
+<div class="card">
+
+<h3>FlyRank AI Internship</h3>
+
+<p>
+
+Worked on Artificial Intelligence and Machine Learning tasks,
+Prompt Engineering, GitHub workflow, portfolio development,
+and practical AI applications.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>InternGrow Flutter Internship</h3>
+
+<p>
+
+Developing Flutter mobile applications,
+authentication systems,
+modern UI development,
+and learning industry-standard mobile application architecture.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="card">
+
+<ul>
+
+<li>FlyRank AI Internship (In Progress)</li>
+<li>InternGrow Flutter Internship (In Progress)</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Areas of Interest</h2>
+
+<div class="card">
 
 <ul>
 
 <li>Artificial Intelligence</li>
-
 <li>Machine Learning</li>
-
-<li>Flutter App Development</li>
-
-<li>Backend Development</li>
-
+<li>Mobile App Development</li>
 <li>Cloud Computing</li>
+<li>Backend Development</li>
+<li>Software Engineering</li>
 
 </ul>
 
-<h2>Career Goal</h2>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Career Objective</h2>
+
+<div class="card">
 
 <p>
-My goal is to become a Software Engineer specializing in Artificial Intelligence and Mobile Application Development while building products that solve real-world problems.
+
+My goal is to become a skilled AI Software Engineer capable of designing
+intelligent applications that solve real-world challenges. I continuously
+improve my knowledge through university coursework, internships,
+personal projects, and self-learning while exploring emerging technologies
+such as Artificial Intelligence, Machine Learning, Mobile Development,
+and Cloud Computing.
+
 </p>
+
+</div>
 
 </section>
 
 <footer>
 
-<p>© 2026 Muhammad Noman Amir. All Rights Reserved.</p>
+<p>
+
+© 2026 Muhammad Noman Amir. All Rights Reserved.
+
+</p>
 
 </footer>
 
 </body>
+
 </html>
