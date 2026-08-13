@@ -61,7 +61,7 @@ nav a:hover{
 .hero p{
     font-size:19px;
     color:#555;
-    max-width:700px;
+    max-width:750px;
     margin:auto;
 }
 
@@ -111,6 +111,12 @@ section{
     margin:5px;
 }
 
+.project-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
 .btn{
     display:inline-block;
     background:#2563eb;
@@ -126,11 +132,63 @@ section{
     background:#1d4ed8;
 }
 
+.btn-secondary{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    padding:10px 23px;
+    border:2px solid #2563eb;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:#2563eb;
+    color:white;
+}
+
 footer{
     background:#0f172a;
     color:white;
     text-align:center;
     padding:25px;
+}
+
+@media(max-width:768px){
+
+    header{
+        padding:18px 5%;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        margin:0 8px;
+        font-size:14px;
+    }
+
+    .hero{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+
 }
 
 </style>
@@ -152,23 +210,59 @@ footer{
 
 </header>
 
+
 <section class="hero">
 
 <h1>My Projects</h1>
 
 <p>
 Here are some of my academic, internship, and personal projects that demonstrate
-my interest in Artificial Intelligence, Mobile App Development, Machine Learning,
-and Software Engineering.
+my experience in Artificial Intelligence, Machine Learning, Flutter Mobile App
+Development, and Software Engineering.
 </p>
 
 </section>
+
 
 <section>
 
 <div class="projects">
 
+
 <!-- Project 1 -->
+
+<div class="card">
+
+<h3>Plant Disease Detection System</h3>
+
+<p>
+A Machine Learning-powered web application that identifies plant diseases
+from leaf images. The system uses a MobileNetV2 CNN model, compares multiple
+Machine Learning algorithms, provides Grad-CAM explainability, and stores
+prediction history.
+</p>
+
+<div class="tech">
+<span>Python</span>
+<span>TensorFlow</span>
+<span>Flask</span>
+<span>PHP</span>
+<span>MySQL</span>
+<span>Machine Learning</span>
+</div>
+
+<div class="project-links">
+
+<a href="plant-disease-detection.html" class="btn">
+View Project
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Project 2 -->
 
 <div class="card">
 
@@ -176,139 +270,170 @@ and Software Engineering.
 
 <p>
 An AI-powered disaster early warning application developed for Pakistan.
-The project focuses on emergency reporting, disaster alerts, and improving
-public safety through intelligent technologies.
+The project focuses on emergency reporting, disaster alerts, location-based
+services, and improving public safety through intelligent technologies.
 </p>
 
 <div class="tech">
-<span>Python</span>
+<span>Flutter</span>
 <span>AI</span>
+<span>Mobile Development</span>
 <span>Disaster Management</span>
 </div>
 
+<div class="project-links">
+
+<a href="disaster-alert-app.html" class="btn">
+View Project
+</a>
+
 <a href="https://github.com/nomanamir20/disaster-alert-app"
 target="_blank"
-class="btn">
-
-View on GitHub
-
+rel="noopener noreferrer"
+class="btn-secondary">
+GitHub
 </a>
 
 </div>
 
-<!-- Project 2 -->
+</div>
+
+
+<!-- Project 3 -->
 
 <div class="card">
 
 <h3>InternGrow Auth Onboarding App</h3>
 
 <p>
-A Flutter application created during the InternGrow Internship that
-implements user authentication, onboarding screens, and a clean
-mobile user experience.
+A Flutter application created during the InternGrow Internship that implements
+user authentication, onboarding screens, and a clean mobile user experience.
 </p>
 
 <div class="tech">
 <span>Flutter</span>
 <span>Dart</span>
 <span>Firebase</span>
+<span>Mobile Development</span>
 </div>
+
+<div class="project-links">
 
 <a href="https://github.com/nomanamir20/InternGrow_AuthOnboardingApp"
 target="_blank"
+rel="noopener noreferrer"
 class="btn">
-
 View on GitHub
-
 </a>
 
 </div>
 
-<!-- Project 3 -->
+</div>
+
+
+<!-- Project 4 -->
 
 <div class="card">
 
 <h3>AI-Powered Mental Health Journal</h3>
 
 <p>
-A personal AI-assisted journal application that helps users record
-thoughts, emotions, and daily experiences while promoting mental wellness.
+A personal AI-assisted journal application designed to help users record
+thoughts, emotions, and daily experiences while supporting mental wellness
+through AI-assisted interaction.
 </p>
 
 <div class="tech">
 <span>AI</span>
 <span>Python</span>
 <span>Healthcare</span>
+<span>Software Development</span>
 </div>
+
+<div class="project-links">
 
 <a href="https://github.com/nomanamir20/AI-Powered-Mental-Health-Journal"
 target="_blank"
+rel="noopener noreferrer"
 class="btn">
-
 View on GitHub
-
 </a>
 
 </div>
 
-<!-- Project 4 -->
+</div>
+
+
+<!-- Project 5 -->
 
 <div class="card">
 
 <h3>FlyRank ML Internship</h3>
 
 <p>
-Machine Learning tasks completed during the FlyRank AI Internship,
-covering practical data preprocessing, feature engineering,
-model training, and AI experimentation.
+Machine Learning work completed during the FlyRank AI Internship, covering
+practical data preprocessing, feature engineering, task framing, baseline
+development, model training, evaluation, and AI experimentation.
 </p>
 
 <div class="tech">
 <span>Machine Learning</span>
 <span>Python</span>
 <span>Jupyter Notebook</span>
+<span>Data Science</span>
 </div>
+
+<div class="project-links">
 
 <a href="https://github.com/nomanamir20/flyrank-ml-internship"
 target="_blank"
+rel="noopener noreferrer"
 class="btn">
-
 View on GitHub
-
 </a>
 
 </div>
 
-<!-- Project 5 -->
+</div>
+
+
+<!-- Project 6 -->
 
 <div class="card">
 
 <h3>Personal Portfolio Website</h3>
 
 <p>
-A responsive personal portfolio website built using HTML and CSS to
-showcase my projects, skills, internship work, and professional journey.
+A responsive personal portfolio website built using HTML and CSS to showcase
+my projects, technical skills, internship experience, and professional journey.
+The website is deployed using GitHub Pages.
 </p>
 
 <div class="tech">
 <span>HTML</span>
 <span>CSS</span>
+<span>GitHub</span>
 <span>GitHub Pages</span>
 </div>
 
+<div class="project-links">
+
 <a href="https://github.com/nomanamir20/portfolio"
 target="_blank"
+rel="noopener noreferrer"
 class="btn">
-
 View on GitHub
-
 </a>
 
 </div>
 
 </div>
 
+
+</div>
+
 </section>
+
 
 <footer>
 
