@@ -4,51 +4,217 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Disaster Alert App</title>
+<title>AI Disaster Alert App | Muhammad Noman Amir</title>
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-font-family:Arial;
-margin:0;
-background:#f5f7fb;
-color:#222;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
 }
 
 header{
-background:#0f172a;
-padding:20px;
+    background:#0f172a;
+    padding:20px 8%;
 }
 
 header a{
-color:white;
-text-decoration:none;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    color:#0f172a;
+    font-size:46px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    font-size:18px;
 }
 
 .container{
-width:90%;
-max-width:900px;
-margin:50px auto;
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
 }
 
-h1{
-color:#0f172a;
+.project-card{
+    background:white;
+    padding:35px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-h2{
-margin-top:35px;
-color:#2563eb;
+.project-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:28px;
 }
 
-ul{
-line-height:1.8;
+.project-card p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.tech span{
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:20px;
+}
+
+.feature{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:20px;
+    border-radius:10px;
+}
+
+.feature h3{
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#666;
+    font-size:15px;
+}
+
+.project-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn-secondary{
+    display:inline-block;
+    padding:11px 23px;
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.back-link{
+    text-align:center;
+    margin:40px 0;
+}
+
+.back-link a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:700px){
+
+    .hero{
+        padding:55px 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    .project-card{
+        padding:25px;
+    }
+
+    .project-card h2{
+        font-size:24px;
+    }
+
+    .project-actions{
+        flex-direction:column;
+    }
+
+    .btn,
+    .btn-secondary{
+        text-align:center;
+    }
+
 }
 
 </style>
@@ -57,79 +223,249 @@ line-height:1.8;
 
 <body>
 
+
 <header>
 
 <a href="projects.html">← Back to Projects</a>
 
 </header>
 
-<div class="container">
+
+<section class="hero">
 
 <h1>AI Disaster Alert App</h1>
 
 <p>
-
-An AI-powered disaster early warning mobile application developed using Flutter. The project aims to improve emergency response by providing disaster alerts, incident reporting, shelter information, and live notifications.
-
+A Flutter-based disaster early warning mobile application designed to
+support emergency response through alerts, incident reporting,
+shelter information, maps, and notifications.
 </p>
+
+</section>
+
+
+<div class="container">
+
+
+<!-- Project Overview -->
+
+<div class="project-card">
+
+<h2>Project Overview</h2>
+
+<p>
+The AI Disaster Alert App is a mobile application developed using Flutter.
+The project focuses on improving emergency response by giving users access
+to disaster alerts, incident reporting, shelter information, and
+location-based services.
+</p>
+
+<p>
+The application combines mobile development with external services and
+APIs to provide useful information to users during emergency situations.
+</p>
+
+<div class="project-actions">
+
+<a href="https://github.com/nomanamir20/disaster-alert-app"
+target="_blank"
+rel="noopener noreferrer"
+class="btn">
+
+View Source Code
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Problem -->
+
+<div class="project-card">
 
 <h2>Problem</h2>
 
 <p>
-
-Many people do not receive disaster warnings quickly enough, making emergency response difficult.
-
+Many people may not receive disaster warnings quickly enough, making
+emergency response more difficult. Users may also need information about
+incidents, nearby shelters, and emergency situations in one accessible
+mobile application.
 </p>
+
+</div>
+
+
+<!-- Solution -->
+
+<div class="project-card">
 
 <h2>Solution</h2>
 
 <p>
-
-The application delivers emergency alerts, allows users to report incidents, locate nearby shelters, and receive important notifications in real time.
-
+The application provides a mobile interface through which users can
+receive emergency alerts, report incidents, view interactive maps,
+find shelter locations, and receive important notifications.
 </p>
 
-<h2>Technologies Used</h2>
+</div>
 
-<ul>
 
-<li>Flutter</li>
+<!-- Technologies -->
 
-<li>Firebase</li>
+<div class="project-card">
 
-<li>Google Maps API</li>
+<h2>Technology Stack</h2>
 
-<li>REST APIs</li>
+<div class="tech">
 
-<li>Dart</li>
+<span>Flutter</span>
+<span>Dart</span>
+<span>Firebase</span>
+<span>Google Maps API</span>
+<span>REST APIs</span>
 
-</ul>
+</div>
+
+</div>
+
+
+<!-- Features -->
+
+<div class="project-card">
 
 <h2>Key Features</h2>
 
-<ul>
+<div class="features">
 
-<li>Emergency Alerts</li>
 
-<li>Incident Reporting</li>
+<div class="feature">
 
-<li>Interactive Maps</li>
+<h3>🚨 Emergency Alerts</h3>
 
-<li>Shelter Locations</li>
+<p>
+Provides users with important disaster and emergency alerts.
+</p>
 
-<li>Push Notifications</li>
+</div>
 
-</ul>
+
+<div class="feature">
+
+<h3>📍 Incident Reporting</h3>
+
+<p>
+Allows users to report disaster-related incidents.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>🗺️ Interactive Maps</h3>
+
+<p>
+Uses map services to provide location-based information.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>🏠 Shelter Locations</h3>
+
+<p>
+Provides information about available shelter locations.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>🔔 Push Notifications</h3>
+
+<p>
+Supports notifications for important emergency information.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- Learning -->
+
+<div class="project-card">
 
 <h2>What I Learned</h2>
 
 <p>
-
-Through this project I improved my Flutter development skills, API integration, Firebase usage, state management, and mobile application architecture.
-
+Through this project, I improved my Flutter development skills and gained
+experience with API integration, Firebase, state management, and mobile
+application architecture.
 </p>
 
 </div>
+
+
+<!-- Project Actions -->
+
+<div class="project-card">
+
+<h2>Explore the Project</h2>
+
+<p>
+You can inspect the project's source code and implementation through
+the GitHub repository.
+</p>
+
+<div class="project-actions">
+
+<a href="https://github.com/nomanamir20/disaster-alert-app"
+target="_blank"
+rel="noopener noreferrer"
+class="btn">
+
+View GitHub Repository
+
+</a>
+
+<a href="projects.html" class="btn-secondary">
+
+Back to Projects
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="back-link">
+
+<a href="projects.html">← Return to All Projects</a>
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+<p>
+© 2026 Muhammad Noman Amir. All Rights Reserved.
+</p>
+
+</footer>
+
 
 </body>
 
