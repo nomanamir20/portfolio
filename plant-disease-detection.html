@@ -4,51 +4,190 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Plant Disease Detection System</title>
+<title>Plant Disease Detection System | Muhammad Noman Amir</title>
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-font-family:Arial, Helvetica, sans-serif;
-margin:0;
-background:#f5f7fb;
-color:#222;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
 }
 
 header{
-background:#0f172a;
-padding:20px;
+    background:#0f172a;
+    padding:20px 8%;
 }
 
 header a{
-color:white;
-text-decoration:none;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    color:#0f172a;
+    font-size:46px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    color:#555;
+    font-size:18px;
 }
 
 .container{
-width:90%;
-max-width:900px;
-margin:50px auto;
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
 }
 
-h1{
-color:#0f172a;
+.project-card{
+    background:white;
+    padding:35px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-h2{
-margin-top:30px;
-color:#2563eb;
+.project-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:28px;
 }
 
-ul{
-line-height:1.8;
+.project-card p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.tech span{
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:20px;
+}
+
+.feature{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:20px;
+    border-radius:10px;
+}
+
+.feature h3{
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#666;
+    font-size:15px;
+}
+
+.workflow{
+    margin-top:20px;
+}
+
+.workflow-step{
+    padding:15px 20px;
+    margin-bottom:12px;
+    background:#f8fafc;
+    border-left:4px solid #2563eb;
+    border-radius:6px;
+}
+
+.workflow-step strong{
+    color:#0f172a;
+}
+
+.learning-list{
+    padding-left:25px;
+    color:#555;
+}
+
+.back-link{
+    text-align:center;
+    margin:40px 0;
+}
+
+.back-link a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:700px){
+
+    .hero{
+        padding:55px 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    .project-card{
+        padding:25px;
+    }
+
+    .project-card h2{
+        font-size:24px;
+    }
+
 }
 
 </style>
@@ -57,60 +196,343 @@ line-height:1.8;
 
 <body>
 
+
 <header>
 
 <a href="projects.html">← Back to Projects</a>
 
 </header>
 
-<div class="container">
+
+<section class="hero">
 
 <h1>Plant Disease Detection System</h1>
 
 <p>
-This project is an AI-powered web application that detects plant diseases from leaf images using machine learning. The system helps farmers identify diseases quickly and supports better crop management.
+An AI-powered web application that uses machine learning and image
+classification to detect plant diseases from uploaded leaf images and
+provide prediction results to support faster crop disease identification.
 </p>
 
-<h2>Problem</h2>
+</section>
+
+
+<div class="container">
+
+
+<!-- Project Overview -->
+
+<div class="project-card">
+
+<h2>Project Overview</h2>
 
 <p>
-Farmers often struggle to identify crop diseases early, which can reduce yield and increase losses.
+The Plant Disease Detection System is an AI-powered web application
+developed to identify plant diseases from leaf images. The project
+combines machine learning with a web-based interface so that a user can
+upload an image and receive a disease prediction.
 </p>
 
-<h2>Solution</h2>
-
 <p>
-The application uses a trained deep learning model to classify plant diseases from uploaded leaf images and provide instant predictions.
-</p>
-
-<h2>Technologies Used</h2>
-
-<ul>
-<li>Python</li>
-<li>TensorFlow / Keras</li>
-<li>Flask</li>
-<li>PHP</li>
-<li>MySQL</li>
-<li>Bootstrap</li>
-</ul>
-
-<h2>Key Features</h2>
-
-<ul>
-<li>Image upload</li>
-<li>Disease prediction</li>
-<li>Confidence score</li>
-<li>User-friendly web interface</li>
-<li>Fast prediction results</li>
-</ul>
-
-<h2>What I Learned</h2>
-
-<p>
-This project improved my understanding of machine learning workflows, image classification, TensorFlow model deployment, Flask APIs, and integrating AI models into web applications.
+The project demonstrates how a trained machine learning model can be
+integrated into a practical web application instead of being used only
+inside a notebook.
 </p>
 
 </div>
 
+
+<!-- Problem -->
+
+<div class="project-card">
+
+<h2>Problem</h2>
+
+<p>
+Farmers and growers can have difficulty identifying plant diseases
+accurately at an early stage. Delayed or incorrect identification can
+affect crop health and potentially lead to reduced yield.
+</p>
+
+</div>
+
+
+<!-- Solution -->
+
+<div class="project-card">
+
+<h2>Solution</h2>
+
+<p>
+The system allows a user to upload a plant leaf image. The machine
+learning model processes the image, classifies the disease category,
+and provides the prediction through a web interface.
+</p>
+
+</div>
+
+
+<!-- Technical Stack -->
+
+<div class="project-card">
+
+<h2>Technology Stack</h2>
+
+<div class="tech">
+
+<span>Python</span>
+<span>TensorFlow</span>
+<span>Keras</span>
+<span>Flask</span>
+<span>PHP</span>
+<span>MySQL</span>
+<span>Bootstrap</span>
+
+</div>
+
+</div>
+
+
+<!-- ML Workflow -->
+
+<div class="project-card">
+
+<h2>Machine Learning Workflow</h2>
+
+<div class="workflow">
+
+
+<div class="workflow-step">
+
+<strong>1. Image Input</strong>
+
+<p>
+The user provides a plant leaf image through the web application.
+</p>
+
+</div>
+
+
+<div class="workflow-step">
+
+<strong>2. Image Processing</strong>
+
+<p>
+The uploaded image is prepared in a format suitable for the trained
+machine learning model.
+</p>
+
+</div>
+
+
+<div class="workflow-step">
+
+<strong>3. Disease Classification</strong>
+
+<p>
+The trained model analyzes the image and predicts the corresponding
+plant disease category.
+</p>
+
+</div>
+
+
+<div class="workflow-step">
+
+<strong>4. Prediction Result</strong>
+
+<p>
+The prediction is returned to the web interface along with a confidence
+score.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- Features -->
+
+<div class="project-card">
+
+<h2>Key Features</h2>
+
+<div class="features">
+
+
+<div class="feature">
+
+<h3>📷 Image Upload</h3>
+
+<p>
+Users can provide plant leaf images through the web interface.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>🤖 Disease Prediction</h3>
+
+<p>
+The trained machine learning model classifies the uploaded image.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>📊 Confidence Score</h3>
+
+<p>
+The application provides a confidence value alongside the prediction.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>🌱 Plant Disease Classification</h3>
+
+<p>
+The system is designed to distinguish between different plant disease
+categories represented in the training data.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>🌐 Web Interface</h3>
+
+<p>
+The machine learning functionality is integrated into a browser-based
+application.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<h3>⚡ Prediction Results</h3>
+
+<p>
+Users receive the classification result after submitting an image.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- Architecture -->
+
+<div class="project-card">
+
+<h2>Application Architecture</h2>
+
+<p>
+The project combines multiple technologies for different parts of the
+application. The machine learning component is developed with Python and
+TensorFlow/Keras, while Flask is used to connect the trained model with
+the application. PHP and MySQL support the web application and data
+management, while Bootstrap provides the user interface styling.
+</p>
+
+</div>
+
+
+<!-- What I Learned -->
+
+<div class="project-card">
+
+<h2>What I Learned</h2>
+
+<ul class="learning-list">
+
+<li>
+How to work with an image-classification machine learning workflow.
+</li>
+
+<li>
+How TensorFlow and Keras can be used to develop machine learning models.
+</li>
+
+<li>
+How a trained AI model can be integrated into a web application.
+</li>
+
+<li>
+How Flask can be used to connect Python-based machine learning
+functionality with a web interface.
+</li>
+
+<li>
+How different technologies can work together in one software project.
+</li>
+
+<li>
+How to present machine learning predictions through a user-friendly
+application.
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- Project Evidence -->
+
+<div class="project-card">
+
+<h2>Project Evidence</h2>
+
+<p>
+This project demonstrates practical experience beyond simply training a
+machine learning model. It combines image classification, model
+integration, backend technologies, database technologies, and a web
+interface into a single application.
+</p>
+
+<p>
+The project is presented here as part of my portfolio to demonstrate my
+experience applying AI and machine learning concepts to a practical
+software problem.
+</p>
+
+</div>
+
+
+<div class="back-link">
+
+<a href="projects.html">← Return to All Projects</a>
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+<p>
+© 2026 Muhammad Noman Amir. All Rights Reserved.
+</p>
+
+</footer>
+
+
 </body>
+
 </html>
