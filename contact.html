@@ -349,22 +349,30 @@ Send Me a Message
 
 <h3>Contact Form</h3>
 
-<form onsubmit="return false;">
+<form
+action="https://formspree.io/f/xzepjgvw"
+method="POST"
+>
 
 <input
 type="text"
+name="name"
 placeholder="Your Name"
-required>
+required
+>
 
 <input
 type="email"
+name="email"
 placeholder="Your Email"
-required>
+required
+>
 
 <textarea
+name="message"
 placeholder="Write your message here..."
-required>
-</textarea>
+required
+></textarea>
 
 <button type="submit">
 Send Message
@@ -374,9 +382,7 @@ Send Message
 
 <p class="note">
 
-This contact form is currently a demonstration and does not send
-messages to a backend. For direct communication, please use the
-Email, GitHub, or LinkedIn options above.
+Your message will be sent securely through the contact form.
 
 </p>
 
