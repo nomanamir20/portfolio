@@ -11,7 +11,7 @@
 <style>
 
 /* ===========================
-   RESET
+   GLOBAL STYLES
 =========================== */
 
 *{
@@ -21,15 +21,19 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-
-/* ===========================
-   BODY
-=========================== */
+html{
+    scroll-behavior:smooth;
+}
 
 body{
     background:#f4f7fb;
     color:#222;
     line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    -webkit-tap-highlight-color:transparent;
 }
 
 
@@ -44,12 +48,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:30px;
 }
 
 header h2{
     font-size:24px;
-    white-space:nowrap;
 }
 
 nav{
@@ -63,6 +65,7 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
@@ -71,7 +74,7 @@ nav a:hover{
 
 
 /* ===========================
-   HERO
+   HERO SECTION
 =========================== */
 
 .hero{
@@ -83,7 +86,7 @@ nav a:hover{
 .hero h1{
     font-size:52px;
     margin-bottom:20px;
-    color:#111827;
+    color:#0f172a;
 }
 
 .hero h3{
@@ -100,26 +103,20 @@ nav a:hover{
     margin:0 auto;
 }
 
-.hero p + p{
-    margin-top:18px;
+.hero-buttons{
+    margin-top:35px;
 }
 
 
 /* ===========================
-   HERO BUTTONS
+   BUTTONS
 =========================== */
 
-.hero-buttons{
-    margin-top:35px;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.btn,
-.btn-secondary{
+.btn{
     display:inline-block;
+    margin-top:10px;
+    background:#2563eb;
+    color:white;
     padding:14px 35px;
     border-radius:8px;
     text-decoration:none;
@@ -127,19 +124,22 @@ nav a:hover{
     transition:.3s;
 }
 
-.btn{
-    background:#2563eb;
-    color:white;
-}
-
 .btn:hover{
     background:#1d4ed8;
 }
 
 .btn-secondary{
+    display:inline-block;
+    margin-top:10px;
+    margin-left:15px;
+    padding:14px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
     border:2px solid #2563eb;
     color:#2563eb;
     background:white;
+    transition:.3s;
 }
 
 .btn-secondary:hover{
@@ -149,7 +149,7 @@ nav a:hover{
 
 
 /* ===========================
-   SECTIONS
+   GENERAL SECTIONS
 =========================== */
 
 section{
@@ -162,7 +162,7 @@ section h2{
 }
 
 section p{
-    max-width:850px;
+    color:#555;
 }
 
 
@@ -203,10 +203,7 @@ section p{
 
 .card h3{
     margin-bottom:15px;
-}
-
-.card p{
-    color:#444;
+    color:#222;
 }
 
 .card a{
@@ -218,7 +215,7 @@ section p{
 }
 
 .card a:hover{
-    text-decoration:underline;
+    color:#1d4ed8;
 }
 
 
@@ -249,7 +246,6 @@ section p{
 }
 
 .contact-btn{
-    display:inline-block;
     background:#2563eb;
     color:white;
     text-decoration:none;
@@ -257,7 +253,7 @@ section p{
     border-radius:8px;
     transition:.3s;
     font-weight:bold;
-    text-align:center;
+    display:inline-block;
 }
 
 .contact-btn:hover{
@@ -296,7 +292,15 @@ footer{
     }
 
     .hero h1{
-        font-size:46px;
+        font-size:44px;
+    }
+
+    .hero h3{
+        font-size:21px;
+    }
+
+    .hero p{
+        font-size:18px;
     }
 
 }
@@ -309,24 +313,27 @@ footer{
 @media(max-width:768px){
 
     header{
-        padding:18px 5%;
+        padding:18px 20px;
+        flex-direction:column;
         align-items:center;
-        gap:20px;
+        gap:15px;
     }
 
     header h2{
-        font-size:22px;
+        font-size:28px;
+        text-align:center;
     }
 
     nav{
-        gap:8px 18px;
-        justify-content:flex-end;
+        width:100%;
+        justify-content:center;
+        gap:10px 18px;
     }
 
     nav a{
         font-size:16px;
+        padding:5px;
     }
-
 
     .hero{
         padding:65px 20px;
@@ -334,13 +341,14 @@ footer{
 
     .hero h1{
         font-size:40px;
-        line-height:1.2;
+        line-height:1.25;
         margin-bottom:20px;
     }
 
     .hero h3{
         font-size:20px;
         line-height:1.5;
+        margin-bottom:20px;
     }
 
     .hero p{
@@ -348,8 +356,8 @@ footer{
         line-height:1.7;
     }
 
-
     .hero-buttons{
+        display:flex;
         flex-direction:column;
         align-items:center;
         gap:15px;
@@ -358,39 +366,54 @@ footer{
 
     .btn,
     .btn-secondary{
-        width:min(100%,350px);
-        text-align:center;
+        width:100%;
+        max-width:350px;
         margin:0;
+        padding:15px 20px;
+        text-align:center;
+        font-size:17px;
     }
 
-
     section{
-        padding:55px 5%;
+        padding:55px 20px;
     }
 
     section h2{
-        font-size:32px;
+        font-size:30px;
+        line-height:1.3;
     }
 
+    section p{
+        font-size:18px;
+        line-height:1.7;
+    }
 
     .skills{
+        justify-content:center;
         gap:12px;
     }
 
     .skill{
         padding:12px 16px;
+        font-size:16px;
     }
-
 
     .projects{
         grid-template-columns:1fr;
-        gap:25px;
+        gap:20px;
     }
 
     .card{
-        padding:25px;
+        padding:25px 22px;
     }
 
+    .card h3{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:17px;
+    }
 
     .contact-links{
         display:grid;
@@ -400,78 +423,66 @@ footer{
 
     .contact-btn{
         width:100%;
-        padding:14px 18px;
+        text-align:center;
+        padding:15px 18px;
+        font-size:17px;
     }
-
 
     footer{
         padding:25px 20px;
+    }
+
+    footer p{
+        font-size:16px;
+        line-height:1.6;
     }
 
 }
 
 
 /* ===========================
-   SMALL PHONES
+   SMALL MOBILE
 =========================== */
 
 @media(max-width:480px){
 
-    header{
-        flex-direction:column;
-        text-align:center;
-        gap:12px;
-    }
-
     header h2{
-        font-size:24px;
+        font-size:26px;
     }
 
     nav{
-        justify-content:center;
-        gap:8px 18px;
+        gap:8px 14px;
     }
 
     nav a{
         font-size:15px;
     }
 
-
     .hero{
         padding:55px 18px;
     }
 
     .hero h1{
-        font-size:36px;
+        font-size:34px;
     }
 
     .hero h3{
-        font-size:19px;
+        font-size:18px;
     }
 
     .hero p{
         font-size:17px;
     }
 
-
     section{
         padding:50px 18px;
     }
 
     section h2{
-        font-size:30px;
+        font-size:28px;
     }
 
-
-    .card{
-        padding:22px;
-    }
-
-    .card h3{
-        font-size:22px;
-    }
-
-    .card p{
+    section p{
         font-size:17px;
     }
 
@@ -494,10 +505,15 @@ footer{
     <h2>Noman Amir</h2>
 
     <nav>
+
         <a href="index.html">Home</a>
+
         <a href="about.html">About</a>
+
         <a href="projects.html">Projects</a>
+
         <a href="contact.html">Contact</a>
+
     </nav>
 
 </header>
@@ -516,16 +532,16 @@ footer{
     </h3>
 
     <p>
-        I build practical mobile applications using Flutter and
-        Artificial Intelligence, focusing on real-world problems
-        and useful user experiences.
+        I build practical mobile applications using Flutter and Artificial Intelligence,
+        focusing on real-world problems and useful user experiences.
     </p>
 
-    <p>
-        As a Computer Science student at COMSATS University Islamabad,
-        Wah Campus, I work with technologies including Flutter,
-        Python, Machine Learning, APIs, and backend systems to turn
-        ideas into working applications.
+    <p style="margin-top:18px;">
+
+        As a Computer Science student at COMSATS University Islamabad, Wah Campus,
+        I work with technologies including Flutter, Python, Machine Learning,
+        APIs, and backend systems to turn ideas into working applications.
+
     </p>
 
     <div class="hero-buttons">
@@ -552,10 +568,12 @@ footer{
     <h2>About Me</h2>
 
     <p>
+
         I'm a BS Computer Science student at COMSATS University Islamabad,
         Wah Campus. I enjoy solving real-world problems using AI, Flutter,
         Python and Web Technologies. My interests include Machine Learning,
         Mobile App Development, Backend Systems and Cloud Computing.
+
     </p>
 
 </section>
@@ -572,13 +590,21 @@ footer{
     <div class="skills">
 
         <div class="skill">Python</div>
+
         <div class="skill">Flutter</div>
+
         <div class="skill">PHP</div>
+
         <div class="skill">MongoDB</div>
+
         <div class="skill">Machine Learning</div>
+
         <div class="skill">HTML</div>
+
         <div class="skill">CSS</div>
+
         <div class="skill">JavaScript</div>
+
         <div class="skill">GitHub</div>
 
     </div>
@@ -602,8 +628,10 @@ footer{
             <h3>AI Disaster Alert App</h3>
 
             <p>
+
                 Flutter application for disaster reporting,
                 emergency alerts, live location and shelter information.
+
             </p>
 
             <a href="projects.html">
@@ -618,8 +646,10 @@ footer{
             <h3>Plant Disease Detection</h3>
 
             <p>
+
                 Machine Learning project using TensorFlow and Flask
                 to identify plant diseases from leaf images.
+
             </p>
 
             <a href="projects.html">
@@ -634,8 +664,10 @@ footer{
             <h3>Personal Portfolio</h3>
 
             <p>
+
                 Responsive portfolio website showcasing projects,
                 skills and achievements.
+
             </p>
 
             <a href="projects.html">
@@ -659,9 +691,11 @@ footer{
     <h2>Future Posts & Capstone</h2>
 
     <p>
+
         This section will be updated with my future technical blogs,
-        AI projects, internship experiences, and Final Year Project
-        (FYP) documentation as I continue my learning journey.
+        AI projects, internship experiences, and Final Year Project (FYP)
+        documentation as I continue my learning journey.
+
     </p>
 
 
@@ -672,8 +706,10 @@ footer{
             <h3>Coming Soon</h3>
 
             <p>
+
                 Technical blogs, AI experiments, project updates,
                 and my capstone project will be published here.
+
             </p>
 
         </div>
@@ -692,9 +728,10 @@ footer{
     <h2>Contact</h2>
 
     <p>
-        If you'd like to collaborate, discuss projects, or connect
-        professionally, feel free to reach out through any of the
-        platforms below.
+
+        If you'd like to collaborate, discuss projects, or connect professionally,
+        feel free to reach out through any of the platforms below.
+
     </p>
 
 
@@ -735,7 +772,6 @@ footer{
         <a
             href="resume.pdf"
             target="_blank"
-            rel="noopener noreferrer"
             class="contact-btn">
 
             📄 Download CV
