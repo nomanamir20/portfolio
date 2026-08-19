@@ -11,7 +11,17 @@
 <style>
 
 /* ===========================
-   GLOBAL STYLES
+   FUTURE POSTS SECTION
+=========================== */
+
+.future-section p{
+    margin-bottom:25px;
+    color:#555;
+    line-height:1.8;
+}
+
+/* ===========================
+   GENERAL STYLES
 =========================== */
 
 *{
@@ -21,25 +31,11 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
     background:#f4f7fb;
     color:#222;
     line-height:1.6;
-    overflow-x:hidden;
 }
-
-a{
-    -webkit-tap-highlight-color:transparent;
-}
-
-
-/* ===========================
-   HEADER
-=========================== */
 
 header{
     background:#0f172a;
@@ -54,24 +50,16 @@ header h2{
     font-size:24px;
 }
 
-nav{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-    gap:25px;
-}
-
 nav a{
     color:white;
     text-decoration:none;
+    margin-left:25px;
     font-weight:bold;
-    transition:.3s;
 }
 
 nav a:hover{
     color:#38bdf8;
 }
-
 
 /* ===========================
    HERO SECTION
@@ -86,10 +74,9 @@ nav a:hover{
 .hero h1{
     font-size:52px;
     margin-bottom:20px;
-    color:#0f172a;
 }
 
-.hero h3{
+.hero h2{
     color:#2563eb;
     margin-bottom:20px;
     font-size:24px;
@@ -100,37 +87,27 @@ nav a:hover{
     font-size:20px;
     color:#555;
     max-width:750px;
-    margin:0 auto;
+    margin:auto;
 }
 
 .hero-buttons{
     margin-top:35px;
 }
 
-
-/* ===========================
-   BUTTONS
-=========================== */
-
 .btn{
     display:inline-block;
-    margin-top:10px;
+    margin-top:35px;
     background:#2563eb;
     color:white;
     padding:14px 35px;
     border-radius:8px;
     text-decoration:none;
     font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#1d4ed8;
 }
 
 .btn-secondary{
     display:inline-block;
-    margin-top:10px;
+    margin-top:35px;
     margin-left:15px;
     padding:14px 35px;
     border-radius:8px;
@@ -147,9 +124,8 @@ nav a:hover{
     color:white;
 }
 
-
 /* ===========================
-   GENERAL SECTIONS
+   SECTIONS
 =========================== */
 
 section{
@@ -160,11 +136,6 @@ section h2{
     margin-bottom:25px;
     color:#0f172a;
 }
-
-section p{
-    color:#555;
-}
-
 
 /* ===========================
    SKILLS
@@ -182,7 +153,6 @@ section p{
     border-radius:8px;
     box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
-
 
 /* ===========================
    PROJECTS
@@ -203,7 +173,6 @@ section p{
 
 .card h3{
     margin-bottom:15px;
-    color:#222;
 }
 
 .card a{
@@ -213,26 +182,6 @@ section p{
     text-decoration:none;
     font-weight:bold;
 }
-
-.card a:hover{
-    color:#1d4ed8;
-}
-
-
-/* ===========================
-   FUTURE POSTS SECTION
-=========================== */
-
-.future-section p{
-    margin-bottom:25px;
-    color:#555;
-    line-height:1.8;
-}
-
-.future-section .card{
-    text-align:center;
-}
-
 
 /* ===========================
    CONTACT SECTION
@@ -253,13 +202,11 @@ section p{
     border-radius:8px;
     transition:.3s;
     font-weight:bold;
-    display:inline-block;
 }
 
 .contact-btn:hover{
     background:#1d4ed8;
 }
-
 
 /* ===========================
    FOOTER
@@ -272,218 +219,52 @@ footer{
     padding:25px;
 }
 
-
 /* ===========================
-   TABLET
-=========================== */
-
-@media(max-width:900px){
-
-    header{
-        padding:18px 6%;
-    }
-
-    section{
-        padding:60px 6%;
-    }
-
-    .hero{
-        padding:80px 25px;
-    }
-
-    .hero h1{
-        font-size:44px;
-    }
-
-    .hero h3{
-        font-size:21px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-
-}
-
-
-/* ===========================
-   MOBILE
+   MOBILE RESPONSIVENESS
 =========================== */
 
 @media(max-width:768px){
 
     header{
-        padding:18px 20px;
         flex-direction:column;
-        align-items:center;
         gap:15px;
-    }
-
-    header h2{
-        font-size:28px;
-        text-align:center;
+        padding:18px 5%;
     }
 
     nav{
-        width:100%;
-        justify-content:center;
-        gap:10px 18px;
+        text-align:center;
     }
 
     nav a{
-        font-size:16px;
-        padding:5px;
+        margin:0 8px;
+        font-size:14px;
     }
 
     .hero{
-        padding:65px 20px;
+        padding:60px 20px;
     }
 
     .hero h1{
-        font-size:40px;
-        line-height:1.25;
-        margin-bottom:20px;
+        font-size:38px;
     }
 
-    .hero h3{
+    .hero h2{
         font-size:20px;
-        line-height:1.5;
-        margin-bottom:20px;
     }
 
     .hero p{
-        font-size:18px;
-        line-height:1.7;
+        font-size:17px;
     }
 
-    .hero-buttons{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-        margin-top:30px;
+    section{
+        padding:50px 5%;
     }
 
     .btn,
     .btn-secondary{
-        width:100%;
-        max-width:350px;
-        margin:0;
-        padding:15px 20px;
-        text-align:center;
-        font-size:17px;
-    }
-
-    section{
-        padding:55px 20px;
-    }
-
-    section h2{
-        font-size:30px;
-        line-height:1.3;
-    }
-
-    section p{
-        font-size:18px;
-        line-height:1.7;
-    }
-
-    .skills{
-        justify-content:center;
-        gap:12px;
-    }
-
-    .skill{
-        padding:12px 16px;
-        font-size:16px;
-    }
-
-    .projects{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    .card{
-        padding:25px 22px;
-    }
-
-    .card h3{
-        font-size:22px;
-    }
-
-    .card p{
-        font-size:17px;
-    }
-
-    .contact-links{
-        display:grid;
-        grid-template-columns:1fr;
-        gap:15px;
-    }
-
-    .contact-btn{
+        margin-left:0;
         width:100%;
         text-align:center;
-        padding:15px 18px;
-        font-size:17px;
-    }
-
-    footer{
-        padding:25px 20px;
-    }
-
-    footer p{
-        font-size:16px;
-        line-height:1.6;
-    }
-
-}
-
-
-/* ===========================
-   SMALL MOBILE
-=========================== */
-
-@media(max-width:480px){
-
-    header h2{
-        font-size:26px;
-    }
-
-    nav{
-        gap:8px 14px;
-    }
-
-    nav a{
-        font-size:15px;
-    }
-
-    .hero{
-        padding:55px 18px;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero h3{
-        font-size:18px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    section{
-        padding:50px 18px;
-    }
-
-    section h2{
-        font-size:28px;
-    }
-
-    section p{
-        font-size:17px;
     }
 
 }
@@ -492,310 +273,315 @@ footer{
 
 </head>
 
-
 <body>
-
-
-<!-- ===========================
-     HEADER
-=========================== -->
 
 <header>
 
-    <h2>Noman Amir</h2>
+<h2>Noman Amir</h2>
 
-    <nav>
-
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About</a>
-
-        <a href="projects.html">Projects</a>
-
-        <a href="contact.html">Contact</a>
-
-    </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</nav>
 
 </header>
 
 
+<main>
+
 <!-- ===========================
-     HERO
+     HERO SECTION
 =========================== -->
 
 <section class="hero">
 
-    <h1>Flutter & AI Mobile App Developer</h1>
+<h1>Flutter & AI Mobile App Developer</h1>
 
-    <h3>
-        Computer Science Student | Building Intelligent Cross-Platform Apps
-    </h3>
+<h2>
+Computer Science Student | Building Intelligent Cross-Platform Apps
+</h2>
 
-    <p>
-        I build practical mobile applications using Flutter and Artificial Intelligence,
-        focusing on real-world problems and useful user experiences.
-    </p>
+<p>
+I build practical mobile applications using Flutter and Artificial Intelligence,
+focusing on real-world problems and useful user experiences.
+</p>
 
-    <p style="margin-top:18px;">
+<p style="margin-top:18px;">
 
-        As a Computer Science student at COMSATS University Islamabad, Wah Campus,
-        I work with technologies including Flutter, Python, Machine Learning,
-        APIs, and backend systems to turn ideas into working applications.
+As a Computer Science student at COMSATS University Islamabad, Wah Campus,
+I work with technologies including Flutter, Python, Machine Learning,
+APIs, and backend systems to turn ideas into working applications.
 
-    </p>
+</p>
 
-    <div class="hero-buttons">
+<div class="hero-buttons">
 
-        <a class="btn" href="projects.html">
-            View My Projects
-        </a>
+<a class="btn" href="projects.html">
+View My Projects
+</a>
 
-        <a class="btn-secondary" href="contact.html">
-            Let's Connect
-        </a>
+<a class="btn-secondary" href="contact.html">
+Let's Connect
+</a>
 
-    </div>
+</div>
 
 </section>
 
 
 <!-- ===========================
-     ABOUT
+     ABOUT SECTION
 =========================== -->
 
 <section>
 
-    <h2>About Me</h2>
+<h2>About Me</h2>
 
-    <p>
+<p>
 
-        I'm a BS Computer Science student at COMSATS University Islamabad,
-        Wah Campus. I enjoy solving real-world problems using AI, Flutter,
-        Python and Web Technologies. My interests include Machine Learning,
-        Mobile App Development, Backend Systems and Cloud Computing.
+I'm a BS Computer Science student at COMSATS University Islamabad, Wah Campus.
+I enjoy solving real-world problems using AI, Flutter, Python and Web Technologies.
+My interests include Machine Learning, Mobile App Development,
+Backend Systems and Cloud Computing.
 
-    </p>
+</p>
+
+<p style="margin-top:18px;">
+
+Currently exploring Artificial Intelligence, Machine Learning,
+Mobile App Development, Backend Systems, and Cloud Technologies while
+continuously improving my software engineering skills.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn" href="projects.html">
+View Projects
+</a>
+
+<a class="btn-secondary" href="contact.html">
+Contact Me
+</a>
+
+</div>
 
 </section>
 
 
 <!-- ===========================
-     SKILLS
+     SKILLS SECTION
 =========================== -->
 
 <section>
 
-    <h2>Skills</h2>
+<h2>Skills</h2>
 
-    <div class="skills">
+<div class="skills">
 
-        <div class="skill">Python</div>
+<div class="skill">Python</div>
+<div class="skill">Flutter</div>
+<div class="skill">PHP</div>
+<div class="skill">MongoDB</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">GitHub</div>
 
-        <div class="skill">Flutter</div>
-
-        <div class="skill">PHP</div>
-
-        <div class="skill">MongoDB</div>
-
-        <div class="skill">Machine Learning</div>
-
-        <div class="skill">HTML</div>
-
-        <div class="skill">CSS</div>
-
-        <div class="skill">JavaScript</div>
-
-        <div class="skill">GitHub</div>
-
-    </div>
+</div>
 
 </section>
 
 
 <!-- ===========================
-     FEATURED PROJECTS
+     PROJECTS SECTION
 =========================== -->
 
 <section>
 
-    <h2>Featured Projects</h2>
+<h2>Featured Projects</h2>
 
-    <div class="projects">
-
-
-        <div class="card">
-
-            <h3>AI Disaster Alert App</h3>
-
-            <p>
-
-                Flutter application for disaster reporting,
-                emergency alerts, live location and shelter information.
-
-            </p>
-
-            <a href="projects.html">
-                View Project
-            </a>
-
-        </div>
+<div class="projects">
 
 
-        <div class="card">
+<div class="card">
 
-            <h3>Plant Disease Detection</h3>
+<h3>AI Disaster Alert App</h3>
 
-            <p>
+<p>
+Flutter application for disaster reporting, emergency alerts,
+live location and shelter information.
+</p>
 
-                Machine Learning project using TensorFlow and Flask
-                to identify plant diseases from leaf images.
+<a
+href="projects.html"
+aria-label="View AI Disaster Alert App project">
 
-            </p>
+View AI Disaster Alert App
 
-            <a href="projects.html">
-                View Project
-            </a>
+</a>
 
-        </div>
-
-
-        <div class="card">
-
-            <h3>Personal Portfolio</h3>
-
-            <p>
-
-                Responsive portfolio website showcasing projects,
-                skills and achievements.
-
-            </p>
-
-            <a href="projects.html">
-                View Project
-            </a>
-
-        </div>
+</div>
 
 
-    </div>
+<div class="card">
+
+<h3>Plant Disease Detection</h3>
+
+<p>
+Machine Learning project using TensorFlow and Flask to identify
+plant diseases from leaf images.
+</p>
+
+<a
+href="projects.html"
+aria-label="View Plant Disease Detection project">
+
+View Plant Disease Detection
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h3>Personal Portfolio</h3>
+
+<p>
+Responsive portfolio website showcasing projects, skills and achievements.
+</p>
+
+<a
+href="projects.html"
+aria-label="View Personal Portfolio project">
+
+View Personal Portfolio
+
+</a>
+
+</div>
+
+
+</div>
 
 </section>
 
 
 <!-- ===========================
-     FUTURE POSTS
+     FUTURE POSTS SECTION
 =========================== -->
 
 <section class="future-section">
 
-    <h2>Future Posts & Capstone</h2>
+<h2>Future Posts & Capstone</h2>
 
-    <p>
+<p>
 
-        This section will be updated with my future technical blogs,
-        AI projects, internship experiences, and Final Year Project (FYP)
-        documentation as I continue my learning journey.
+This section will be updated with my future technical blogs,
+AI projects, internship experiences, and Final Year Project (FYP)
+documentation as I continue my learning journey.
 
-    </p>
+</p>
 
+<div class="projects">
 
-    <div class="projects">
+<div class="card">
 
-        <div class="card">
+<h3>Coming Soon</h3>
 
-            <h3>Coming Soon</h3>
+<p>
 
-            <p>
+Technical blogs, AI experiments, project updates,
+and my capstone project will be published here.
 
-                Technical blogs, AI experiments, project updates,
-                and my capstone project will be published here.
+</p>
 
-            </p>
+</div>
 
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
 <!-- ===========================
-     CONTACT
+     CONTACT SECTION
 =========================== -->
 
 <section id="contact">
 
-    <h2>Contact</h2>
+<h2>Contact</h2>
 
-    <p>
+<p>
 
-        If you'd like to collaborate, discuss projects, or connect professionally,
-        feel free to reach out through any of the platforms below.
+If you'd like to collaborate, discuss projects, or connect professionally,
+feel free to reach out through any of the platforms below.
 
-    </p>
+</p>
 
-
-    <div class="contact-links">
-
-
-        <a
-            href="mailto:nomanamir664@gmail.com"
-            class="contact-btn">
-
-            📧 Email Me
-
-        </a>
+<div class="contact-links">
 
 
-        <a
-            href="https://github.com/nomanamir20"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-btn">
+<a
+href="mailto:nomanamir664@gmail.com"
+class="contact-btn">
 
-            💻 GitHub
+📧 Email Me
 
-        </a>
+</a>
 
 
-        <a
-            href="https://www.linkedin.com/in/noman-amir-995300323"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-btn">
+<a
+href="https://github.com/nomanamir20"
+target="_blank"
+rel="noopener noreferrer"
+class="contact-btn">
 
-            💼 LinkedIn
+💻 GitHub
 
-        </a>
-
-
-        <a
-            href="resume.pdf"
-            target="_blank"
-            class="contact-btn">
-
-            📄 Download CV
-
-        </a>
+</a>
 
 
-    </div>
+<a
+href="https://www.linkedin.com/in/noman-amir-995300323"
+target="_blank"
+rel="noopener noreferrer"
+class="contact-btn">
+
+💼 LinkedIn
+
+</a>
+
+
+<a
+href="resume.pdf"
+target="_blank"
+rel="noopener noreferrer"
+download="Noman_Amir_CV.pdf"
+class="contact-btn">
+
+📄 Download CV
+
+</a>
+
+
+</div>
 
 </section>
 
+</main>
 
-<!-- ===========================
-     FOOTER
-=========================== -->
 
 <footer>
 
-    <p>
-        © 2026 Muhammad Noman Amir. All Rights Reserved.
-    </p>
+<p>
+© 2026 Muhammad Noman Amir. All Rights Reserved.
+</p>
 
 </footer>
-
 
 </body>
 
