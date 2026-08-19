@@ -6,22 +6,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Muhammad Noman Amir | Portfolio</title>
+<title>Muhammad Noman Amir | Flutter & AI Mobile App Developer</title>
+
+<meta name="description" content="Muhammad Noman Amir is a Computer Science student and Flutter & AI Mobile App Developer building practical AI-powered applications and cross-platform solutions.">
+
+<meta name="author" content="Muhammad Noman Amir">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://nomanamir20.github.io/portfolio/">
+
+<!-- Open Graph / Social Sharing -->
+
+<meta property="og:title" content="Muhammad Noman Amir | Flutter & AI Mobile App Developer">
+
+<meta property="og:description" content="Computer Science student building practical Flutter, AI, Machine Learning and software projects.">
+
+<meta property="og:url" content="https://nomanamir20.github.io/portfolio/">
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="Muhammad Noman Amir Portfolio">
+
+<!-- Twitter / X Sharing -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Muhammad Noman Amir | Flutter & AI Mobile App Developer">
+
+<meta name="twitter:description" content="Computer Science student building practical Flutter, AI, Machine Learning and software projects.">
+
 
 <style>
 
 /* ===========================
-   FUTURE POSTS SECTION
-=========================== */
-
-.future-section p{
-    margin-bottom:25px;
-    color:#555;
-    line-height:1.8;
-}
-
-/* ===========================
-   GENERAL STYLES
+   GLOBAL STYLES
 =========================== */
 
 *{
@@ -36,6 +55,11 @@ body{
     color:#222;
     line-height:1.6;
 }
+
+
+/* ===========================
+   HEADER
+=========================== */
 
 header{
     background:#0f172a;
@@ -61,8 +85,9 @@ nav a:hover{
     color:#38bdf8;
 }
 
+
 /* ===========================
-   HERO SECTION
+   HERO
 =========================== */
 
 .hero{
@@ -105,6 +130,10 @@ nav a:hover{
     font-weight:bold;
 }
 
+.btn:hover{
+    background:#1d4ed8;
+}
+
 .btn-secondary{
     display:inline-block;
     margin-top:35px;
@@ -124,6 +153,7 @@ nav a:hover{
     color:white;
 }
 
+
 /* ===========================
    SECTIONS
 =========================== */
@@ -136,6 +166,7 @@ section h2{
     margin-bottom:25px;
     color:#0f172a;
 }
+
 
 /* ===========================
    SKILLS
@@ -153,6 +184,7 @@ section h2{
     border-radius:8px;
     box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
+
 
 /* ===========================
    PROJECTS
@@ -183,6 +215,22 @@ section h2{
     font-weight:bold;
 }
 
+
+/* ===========================
+   FUTURE POSTS SECTION
+=========================== */
+
+.future-section p{
+    margin-bottom:25px;
+    color:#555;
+    line-height:1.8;
+}
+
+.future-section .card{
+    text-align:center;
+}
+
+
 /* ===========================
    CONTACT SECTION
 =========================== */
@@ -208,6 +256,7 @@ section h2{
     background:#1d4ed8;
 }
 
+
 /* ===========================
    FOOTER
 =========================== */
@@ -218,6 +267,7 @@ footer{
     text-align:center;
     padding:25px;
 }
+
 
 /* ===========================
    MOBILE RESPONSIVENESS
@@ -262,8 +312,16 @@ footer{
 
     .btn,
     .btn-secondary{
-        margin-left:0;
         width:100%;
+        margin-left:0;
+        text-align:center;
+    }
+
+    .contact-links{
+        flex-direction:column;
+    }
+
+    .contact-btn{
         text-align:center;
     }
 
@@ -273,23 +331,31 @@ footer{
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h2>Noman Amir</h2>
 
 <nav>
+
 <a href="index.html">Home</a>
+
 <a href="about.html">About</a>
+
 <a href="projects.html">Projects</a>
+
 <a href="contact.html">Contact</a>
+
 </nav>
 
 </header>
 
 
 <main>
+
 
 <!-- ===========================
      HERO SECTION
@@ -315,6 +381,7 @@ I work with technologies including Flutter, Python, Machine Learning,
 APIs, and backend systems to turn ideas into working applications.
 
 </p>
+
 
 <div class="hero-buttons">
 
@@ -348,26 +415,6 @@ Backend Systems and Cloud Computing.
 
 </p>
 
-<p style="margin-top:18px;">
-
-Currently exploring Artificial Intelligence, Machine Learning,
-Mobile App Development, Backend Systems, and Cloud Technologies while
-continuously improving my software engineering skills.
-
-</p>
-
-<div class="hero-buttons">
-
-<a class="btn" href="projects.html">
-View Projects
-</a>
-
-<a class="btn-secondary" href="contact.html">
-Contact Me
-</a>
-
-</div>
-
 </section>
 
 
@@ -382,13 +429,21 @@ Contact Me
 <div class="skills">
 
 <div class="skill">Python</div>
+
 <div class="skill">Flutter</div>
+
 <div class="skill">PHP</div>
+
 <div class="skill">MongoDB</div>
+
 <div class="skill">Machine Learning</div>
+
 <div class="skill">HTML</div>
+
 <div class="skill">CSS</div>
+
 <div class="skill">JavaScript</div>
+
 <div class="skill">GitHub</div>
 
 </div>
@@ -412,15 +467,17 @@ Contact Me
 <h3>AI Disaster Alert App</h3>
 
 <p>
+
 Flutter application for disaster reporting, emergency alerts,
 live location and shelter information.
+
 </p>
 
 <a
 href="projects.html"
 aria-label="View AI Disaster Alert App project">
 
-View AI Disaster Alert App
+View Project
 
 </a>
 
@@ -432,15 +489,17 @@ View AI Disaster Alert App
 <h3>Plant Disease Detection</h3>
 
 <p>
+
 Machine Learning project using TensorFlow and Flask to identify
 plant diseases from leaf images.
+
 </p>
 
 <a
 href="projects.html"
 aria-label="View Plant Disease Detection project">
 
-View Plant Disease Detection
+View Project
 
 </a>
 
@@ -452,14 +511,16 @@ View Plant Disease Detection
 <h3>Personal Portfolio</h3>
 
 <p>
+
 Responsive portfolio website showcasing projects, skills and achievements.
+
 </p>
 
 <a
 href="projects.html"
 aria-label="View Personal Portfolio project">
 
-View Personal Portfolio
+View Project
 
 </a>
 
@@ -472,7 +533,7 @@ View Personal Portfolio
 
 
 <!-- ===========================
-     FUTURE POSTS SECTION
+     FUTURE POSTS
 =========================== -->
 
 <section class="future-section">
@@ -486,6 +547,7 @@ AI projects, internship experiences, and Final Year Project (FYP)
 documentation as I continue my learning journey.
 
 </p>
+
 
 <div class="projects">
 
@@ -521,6 +583,7 @@ If you'd like to collaborate, discuss projects, or connect professionally,
 feel free to reach out through any of the platforms below.
 
 </p>
+
 
 <div class="contact-links">
 
@@ -558,8 +621,6 @@ class="contact-btn">
 
 <a
 href="resume.pdf"
-target="_blank"
-rel="noopener noreferrer"
 download="Noman_Amir_CV.pdf"
 class="contact-btn">
 
@@ -572,6 +633,7 @@ class="contact-btn">
 
 </section>
 
+
 </main>
 
 
@@ -582,6 +644,7 @@ class="contact-btn">
 </p>
 
 </footer>
+
 
 </body>
 
