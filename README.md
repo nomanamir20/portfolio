@@ -1,58 +1,64 @@
-# 🌐 Muhammad Noman Amir | Personal Portfolio
+# 🌐 Muhammad Noman Amir | Developer Portfolio
 
-Welcome to my personal portfolio website!
+Welcome to my personal developer portfolio.
 
-This portfolio showcases my projects, technical skills, education, and contact information. It has been built to present my work as a Computer Science student and aspiring Software Engineer.
-
----
+This website showcases my software development projects, technical skills, education, internship experience, and selected work in mobile application development, web development, and AI/ML.
 
 ## 🔗 Live Website
 
-🌍 https://nomanamir20.github.io/portfolio/
-
----
+🌍 **Portfolio:**
+https://nomanamir20.github.io/portfolio/
 
 ## 👨‍💻 About Me
 
 Hi! I'm **Muhammad Noman Amir**, a BS Computer Science student at **COMSATS University Islamabad, Wah Campus**.
 
-I'm passionate about:
+I focus on building practical software applications, with primary experience in:
 
-- Artificial Intelligence
-- Machine Learning
-- Flutter App Development
-- Backend Development
-- Web Development
-- Cloud Computing
+* Flutter & Dart mobile application development
+* Web application development
+* REST API integration
+* Firebase services
+* Database-driven applications
+* AI and Machine Learning projects
+* Git and GitHub
 
-I enjoy building real-world software solutions that solve practical problems.
+My goal is to develop reliable, user-focused applications that solve practical problems.
 
----
+## ✨ Portfolio Features
 
-# ✨ Features
+* Responsive design
+* Developer introduction and profile
+* Technical skills showcase
+* Featured project portfolio
+* Project details and case studies
+* Resume download
+* GitHub integration
+* LinkedIn integration
+* Contact information
 
-- Responsive Design
-- Professional Home Page
-- About Me Section
-- Skills Showcase
-- Projects Portfolio
-- Contact Page
-- Resume Download
-- GitHub Integration
-- LinkedIn Integration
+## 🛠 Technologies Used
 
----
+This portfolio website is built using:
 
-# 🛠 Technologies Used
+* HTML5
+* CSS3
+* Git
+* GitHub Pages
 
-- HTML5
-- CSS3
-- Git
-- GitHub Pages
+## 📱 Featured Work
 
----
+The portfolio showcases selected projects across mobile application development, AI/ML, and software development, including:
 
-# 📂 Project Structure
+* Flutter E-Commerce Application
+* Flutter Food Delivery Application
+* Flutter Hospital Appointment System
+* Flutter Expense Tracker & Finance Application
+* AI Disaster Alert Application
+* Plant Disease Detection System
+* Other academic and internship projects
+
+## 📂 Project Structure
 
 ```text
 portfolio/
@@ -67,61 +73,27 @@ portfolio/
 └── README.md
 ```
 
----
+## 🎯 Purpose
 
-# 🚀 Featured Projects
+This portfolio is designed to present my development experience, selected projects, technical skills, and professional profile in one place.
 
-## 🌍 AI Disaster Alert App
+It is continuously updated as I build new applications and gain additional development experience.
 
-A Flutter-based disaster reporting and emergency alert application designed for Pakistan.
+## 📞 Contact
 
----
+📧 **Email:**
+[nomanamir664@gmail.com](mailto:nomanamir664@gmail.com)
 
-## 🌿 Plant Disease Detection
-
-Machine Learning project using TensorFlow to detect plant diseases from leaf images.
-
----
-
-## 🧠 AI-Powered Mental Health Journal
-
-An AI-assisted journaling application promoting mental well-being.
-
----
-
-## 📱 InternGrow Auth Onboarding App
-
-Flutter application developed during the InternGrow internship.
-
----
-
-## 🤖 FlyRank Machine Learning Internship
-
-Machine Learning notebooks and experiments completed during the FlyRank internship.
-
----
-
-# 📞 Contact
-
-📧 Email
-
-nomanamir664@gmail.com
-
-💻 GitHub
-
+💻 **GitHub:**
 https://github.com/nomanamir20
 
-💼 LinkedIn
-
+💼 **LinkedIn:**
 https://www.linkedin.com/in/noman-amir-995300323
 
-🌐 Portfolio
-
+🌐 **Portfolio:**
 https://nomanamir20.github.io/portfolio/
 
----
-
-# 📄 License
+## 📄 License
 
 This project is created for educational and portfolio purposes.
 
