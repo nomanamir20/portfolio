@@ -8,6 +8,9 @@
 
 <title>About | Muhammad Noman Amir</title>
 
+<meta name="description"
+content="Learn more about Muhammad Noman Amir, a Computer Science student and Flutter & Web Application Developer with experience in mobile, web, AI, and machine learning projects.">
+
 <style>
 
 *{
@@ -17,23 +20,39 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    background:#f4f7fb;
-    color:#222;
+    background:#f8fafc;
+    color:#1f2937;
     line-height:1.6;
 }
+
+/* ===========================
+   HEADER
+=========================== */
 
 header{
     background:#0f172a;
     color:white;
-    padding:18px 10%;
+    padding:18px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 header h2{
     font-size:24px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
 }
 
 nav a{
@@ -41,16 +60,22 @@ nav a{
     text-decoration:none;
     margin-left:25px;
     font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
     color:#38bdf8;
 }
 
+/* ===========================
+   HERO
+=========================== */
+
 .hero{
     background:white;
     text-align:center;
-    padding:80px 20px;
+    padding:90px 20px;
+    border-bottom:1px solid #e5e7eb;
 }
 
 .hero h1{
@@ -59,15 +84,26 @@ nav a:hover{
     margin-bottom:15px;
 }
 
+.hero h2{
+    font-size:22px;
+    color:#2563eb;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
 .hero p{
-    font-size:19px;
-    color:#555;
-    max-width:800px;
+    font-size:18px;
+    color:#4b5563;
+    max-width:850px;
     margin:auto;
 }
 
+/* ===========================
+   GENERAL SECTIONS
+=========================== */
+
 section{
-    padding:70px 10%;
+    padding:70px 8%;
 }
 
 .section-title{
@@ -76,43 +112,171 @@ section{
     margin-bottom:30px;
 }
 
+/* ===========================
+   CARDS
+=========================== */
+
 .card{
     background:white;
     padding:30px;
     border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    margin-bottom:30px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    margin-bottom:25px;
     transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .card h3{
     color:#2563eb;
     margin-bottom:15px;
+    font-size:22px;
 }
+
+.card p{
+    color:#4b5563;
+}
+
+.card ul{
+    padding-left:20px;
+    color:#4b5563;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
 
 .skills{
     display:flex;
     flex-wrap:wrap;
-    gap:15px;
+    gap:12px;
 }
 
 .skill{
-    background:#e0f2fe;
-    color:#0369a1;
+    background:#eff6ff;
+    color:#1d4ed8;
     padding:10px 18px;
     border-radius:25px;
     font-weight:bold;
+    border:1px solid #dbeafe;
 }
+
+/* ===========================
+   SKILL GROUPS
+=========================== */
+
+.skill-group{
+    margin-bottom:30px;
+}
+
+.skill-group:last-child{
+    margin-bottom:0;
+}
+
+.skill-group h3{
+    font-size:20px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
 
 footer{
     background:#0f172a;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:25px 20px;
+}
+
+footer p{
+    margin:0;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:18px 5%;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav a{
+        margin-left:0;
+        font-size:14px;
+    }
+
+    .hero{
+        padding:70px 20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero h2{
+        font-size:19px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:55px 6%;
+    }
+
+    .section-title{
+        font-size:29px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    header h2{
+        font-size:21px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero h2{
+        font-size:18px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
 }
 
 </style>
@@ -120,6 +284,11 @@ footer{
 </head>
 
 <body>
+
+
+<!-- ===========================
+     HEADER
+=========================== -->
 
 <header>
 
@@ -136,21 +305,31 @@ footer{
 
 </header>
 
+
+<!-- ===========================
+     ABOUT HERO
+=========================== -->
+
 <section class="hero">
 
 <h1>About Me</h1>
 
+<h2>Flutter & Web Application Developer</h2>
+
 <p>
 
-Hello! I'm <strong>Muhammad Noman Amir</strong>, a passionate Computer Science student
-at COMSATS University Islamabad, Wah Campus. I enjoy building intelligent
-software solutions using Artificial Intelligence, Flutter, Python, and modern
-web technologies. I love learning new technologies and solving real-world problems
-through software engineering.
+I'm <strong>Muhammad Noman Amir</strong>, a BS Computer Science student
+at COMSATS University Islamabad, Wah Campus. I focus on building practical
+mobile and web applications that solve real-world problems.
 
 </p>
 
 </section>
+
+
+<!-- ===========================
+     EDUCATION
+=========================== -->
 
 <section>
 
@@ -166,13 +345,63 @@ through software engineering.
 Wah Campus<br><br>
 
 2023 – Present<br>
-Current Semester: 6th Semester
+<strong>Current Semester:</strong> 7th Semester
 
 </p>
 
 </div>
 
 </section>
+
+
+<!-- ===========================
+     PROFESSIONAL PROFILE
+=========================== -->
+
+<section>
+
+<h2 class="section-title">Professional Profile</h2>
+
+<div class="card">
+
+<p>
+
+My primary development focus is Flutter and Dart, where I build
+cross-platform mobile applications with practical features such as
+authentication, APIs, Firebase integration, databases, notifications,
+state management, and responsive user interfaces.
+
+</p>
+
+<br>
+
+<p>
+
+I also have experience developing web applications using HTML, CSS,
+JavaScript, PHP, MongoDB, and MySQL. My development experience includes
+working on applications for e-commerce, food delivery, healthcare,
+finance, AI, and machine learning use cases.
+
+</p>
+
+<br>
+
+<p>
+
+Alongside application development, I have explored Artificial Intelligence
+and Machine Learning through academic projects and practical work using
+Python and related technologies.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+     TECHNICAL SKILLS
+=========================== -->
 
 <section>
 
@@ -180,18 +409,49 @@ Current Semester: 6th Semester
 
 <div class="card">
 
+
+<div class="skill-group">
+
+<h3>Mobile Development</h3>
+
 <div class="skills">
 
-<div class="skill">Python</div>
 <div class="skill">Flutter</div>
-<div class="skill">PHP</div>
-<div class="skill">MongoDB</div>
+<div class="skill">Dart</div>
+<div class="skill">Firebase</div>
+<div class="skill">REST APIs</div>
+<div class="skill">State Management</div>
+
+</div>
+
+</div>
+
+
+<div class="skill-group">
+
+<h3>Web Development</h3>
+
+<div class="skills">
+
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
 <div class="skill">JavaScript</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Firebase</div>
+<div class="skill">PHP</div>
+<div class="skill">MongoDB</div>
+<div class="skill">MySQL</div>
+
+</div>
+
+</div>
+
+
+<div class="skill-group">
+
+<h3>AI & Machine Learning</h3>
+
+<div class="skills">
+
+<div class="skill">Python</div>
 <div class="skill">Machine Learning</div>
 <div class="skill">Artificial Intelligence</div>
 
@@ -199,36 +459,98 @@ Current Semester: 6th Semester
 
 </div>
 
+
+<div class="skill-group">
+
+<h3>Tools & Development</h3>
+
+<div class="skills">
+
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+<div class="skill">Postman</div>
+
+</div>
+
+</div>
+
+
+</div>
+
 </section>
+
+
+<!-- ===========================
+     INTERNSHIP EXPERIENCE
+=========================== -->
 
 <section>
 
-<h2 class="section-title">Internship Experience</h2>
+<h2 class="section-title">Experience</h2>
+
 
 <div class="card">
 
-<h3>FlyRank AI Internship</h3>
+<h3>InternGrow — Flutter App Development</h3>
 
 <p>
 
-Worked on Artificial Intelligence and Machine Learning tasks,
-Prompt Engineering, GitHub workflow, portfolio development,
-and practical AI applications.
+Developed Flutter mobile applications while working with authentication,
+modern user interfaces, application workflows, and practical mobile
+development concepts.
 
 </p>
 
 </div>
 
+
 <div class="card">
 
-<h3>InternGrow Flutter Internship</h3>
+<h3>FlyRank — AI / Machine Learning Internship</h3>
 
 <p>
 
-Developing Flutter mobile applications,
-authentication systems,
-modern UI development,
-and learning industry-standard mobile application architecture.
+Worked on practical Artificial Intelligence and Machine Learning tasks,
+including data preprocessing, feature engineering, model development,
+evaluation, Prompt Engineering, GitHub workflows, and AI-related projects.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+<!-- ===========================
+     PROJECT EXPERIENCE
+=========================== -->
+
+<section>
+
+<h2 class="section-title">Project Experience</h2>
+
+<div class="card">
+
+<p>
+
+Through university, internship, and personal projects, I have developed
+applications covering multiple real-world domains. My project experience
+includes e-commerce applications, food delivery systems, hospital
+appointment platforms, expense tracking, disaster reporting, plant
+disease detection, and AI/ML applications.
+
+</p>
+
+<br>
+
+<p>
+
+These projects have helped me gain practical experience in application
+architecture, authentication, APIs, databases, Firebase, state management,
+user interface development, machine learning, and software development
+workflows.
 
 </p>
 
@@ -236,22 +558,10 @@ and learning industry-standard mobile application architecture.
 
 </section>
 
-<section>
 
-<h2 class="section-title">Certifications</h2>
-
-<div class="card">
-
-<ul>
-
-<li>FlyRank AI Internship (In Progress)</li>
-<li>InternGrow Flutter Internship (In Progress)</li>
-
-</ul>
-
-</div>
-
-</section>
+<!-- ===========================
+     AREAS OF INTEREST
+=========================== -->
 
 <section>
 
@@ -261,11 +571,18 @@ and learning industry-standard mobile application architecture.
 
 <ul>
 
+<li>Flutter & Mobile Application Development</li>
+
+<li>Web Application Development</li>
+
 <li>Artificial Intelligence</li>
+
 <li>Machine Learning</li>
-<li>Mobile App Development</li>
-<li>Cloud Computing</li>
-<li>Backend Development</li>
+
+<li>Backend & API Development</li>
+
+<li>Cloud Technologies</li>
+
 <li>Software Engineering</li>
 
 </ul>
@@ -273,6 +590,11 @@ and learning industry-standard mobile application architecture.
 </div>
 
 </section>
+
+
+<!-- ===========================
+     CAREER OBJECTIVE
+=========================== -->
 
 <section>
 
@@ -282,12 +604,20 @@ and learning industry-standard mobile application architecture.
 
 <p>
 
-My goal is to become a skilled AI Software Engineer capable of designing
-intelligent applications that solve real-world challenges. I continuously
-improve my knowledge through university coursework, internships,
-personal projects, and self-learning while exploring emerging technologies
-such as Artificial Intelligence, Machine Learning, Mobile Development,
-and Cloud Computing.
+My goal is to become a strong software developer capable of building
+reliable and practical applications for real-world users. I am currently
+focused on strengthening my skills in Flutter, web development, APIs,
+databases, and modern software development practices.
+
+</p>
+
+<br>
+
+<p>
+
+I continuously improve my technical knowledge through university
+coursework, internships, personal projects, and self-learning while
+exploring technologies that can help me build better software solutions.
 
 </p>
 
@@ -295,15 +625,19 @@ and Cloud Computing.
 
 </section>
 
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
 <footer>
 
 <p>
-
 © 2026 Muhammad Noman Amir. All Rights Reserved.
-
 </p>
 
 </footer>
+
 
 </body>
 
