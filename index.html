@@ -2,720 +2,657 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Muhammad Noman Amir | Flutter & Web Application Developer</title>
-
-<meta name="description" content="Muhammad Noman Amir is a Computer Science student and Flutter & Web Application Developer building practical mobile and web applications using Flutter, APIs, databases, and Firebase.">
-
-<meta name="author" content="Muhammad Noman Amir">
-<meta name="robots" content="index, follow">
-
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<link rel="canonical" href="https://nomanamir20.github.io/portfolio/">
-
-<!-- Open Graph / Social Sharing -->
-<meta property="og:title" content="Muhammad Noman Amir | Flutter & Web Application Developer">
-
-<meta property="og:description" content="Computer Science student building practical mobile and web applications using Flutter, APIs, databases, Firebase, and modern development tools.">
-
-<meta property="og:image" content="https://nomanamir20.github.io/portfolio/preview-image.png">
-
-<meta property="og:url" content="https://nomanamir20.github.io/portfolio/">
-
-<meta property="og:type" content="website">
-
-<meta property="og:site_name" content="Muhammad Noman Amir Portfolio">
-
-
-<!-- Twitter / X Sharing -->
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Muhammad Noman Amir | Flutter & Web Application Developer">
-
-<meta name="twitter:description" content="Computer Science student building practical mobile and web applications using Flutter, APIs, databases, Firebase, and modern development tools.">
-
-<meta name="twitter:image" content="https://nomanamir20.github.io/portfolio/preview-image.png">
-
-
-<!-- Analytics Integration -->
-<!-- Replace with your actual tracking script if needed -->
-
-<!--
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script>
--->
-
-
-<style>
-
-/* ===========================
-   GLOBAL STYLES
-=========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#f4f7fb;
-    color:#222;
-    line-height:1.6;
-}
-
-
-/* ===========================
-   HEADER
-=========================== */
-
-header{
-    background:#0f172a;
-    color:white;
-    padding:18px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-header h2{
-    font-size:24px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#38bdf8;
-}
-
-
-/* ===========================
-   HERO
-=========================== */
-
-.hero{
-    text-align:center;
-    padding:110px 20px 100px;
-    background:white;
-}
-
-.hero h1{
-    font-size:52px;
-    line-height:1.2;
-    margin-bottom:18px;
-    color:#111827;
-}
-
-.hero h2{
-    color:#2563eb;
-    margin-bottom:22px;
-    font-size:23px;
-    font-weight:600;
-}
-
-.hero p{
-    font-size:19px;
-    color:#4b5563;
-    max-width:780px;
-    margin:0 auto;
-    line-height:1.8;
-}
-
-.hero-description{
-    margin-top:18px !important;
-}
-
-.hero-buttons{
-    margin-top:35px;
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:14px 35px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#1d4ed8;
-}
-
-.btn-secondary{
-    display:inline-block;
-    padding:14px 35px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    border:2px solid #2563eb;
-    color:#2563eb;
-    background:white;
-    transition:.3s;
-}
-
-.btn-secondary:hover{
-    background:#2563eb;
-    color:white;
-}
-
-
-/* ===========================
-   SECTIONS
-=========================== */
-
-section{
-    padding:70px 10%;
-}
-
-section h2{
-    margin-bottom:25px;
-    color:#0f172a;
-}
-
-
-/* ===========================
-   SKILLS
-=========================== */
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.skill{
-    background:white;
-    padding:12px 18px;
-    border-radius:8px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
-}
-
-
-/* ===========================
-   PROJECTS
-=========================== */
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
-.card a{
-    display:inline-block;
-    margin-top:15px;
-    color:#2563eb;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-
-/* ===========================
-   FUTURE POSTS SECTION
-=========================== */
-
-.future-section p{
-    margin-bottom:25px;
-    color:#555;
-    line-height:1.8;
-}
-
-.future-section .card{
-    text-align:center;
-}
-
-
-/* ===========================
-   CONTACT SECTION
-=========================== */
-
-.contact-links{
-    margin-top:30px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:18px;
-}
-
-.contact-btn{
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:8px;
-    transition:.3s;
-    font-weight:bold;
-}
-
-.contact-btn:hover{
-    background:#1d4ed8;
-}
-
-
-/* ===========================
-   FOOTER
-=========================== */
-
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:25px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-}
-
-.flyrank-badge{
-    margin-top:8px;
-    display:inline-block;
-    transition:transform 0.2s ease;
-}
-
-.flyrank-badge:hover{
-    transform:scale(1.05);
-}
-
-.flyrank-badge img{
-    max-width:140px;
-    height:auto;
-}
-
-
-/* ===========================
-   MOBILE RESPONSIVENESS
-=========================== */
-
-@media(max-width:768px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-        padding:18px 5%;
-    }
-
-    nav{
-        text-align:center;
-    }
-
-    nav a{
-        margin:0 8px;
-        font-size:14px;
-    }
-
-    .hero{
-        padding:70px 20px 70px;
-    }
-
-    .hero h1{
-        font-size:40px;
-    }
-
-    .hero h2{
-        font-size:20px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        max-width:400px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .btn,
-    .btn-secondary{
-        width:100%;
-        text-align:center;
-    }
-
-    section{
-        padding:50px 5%;
-    }
-
-    .contact-links{
-        flex-direction:column;
-    }
-
-    .contact-btn{
-        text-align:center;
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Noman Amir | Flutter & Web Application Developer</title>
+
+    <meta name="description"
+        content="Muhammad Noman Amir is a Computer Science student and Flutter & Web Application Developer building practical mobile and web applications using Flutter, APIs, databases, Firebase, and modern development tools.">
+
+    <meta name="author" content="Muhammad Noman Amir">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Muhammad Noman Amir | Flutter & Web Application Developer">
+
+    <meta property="og:description"
+        content="Computer Science student building practical mobile and web applications using Flutter, APIs, databases, Firebase, and modern development tools.">
+
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:title"
+        content="Muhammad Noman Amir | Flutter & Web Application Developer">
+
+    <meta name="twitter:description"
+        content="Computer Science student building practical mobile and web applications using Flutter, APIs, databases, Firebase, and modern development tools.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+        /* ===========================
+           HEADER
+        =========================== */
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* ===========================
+           HERO SECTION
+        =========================== */
+
+        .hero {
+            text-align: center;
+            padding: 110px 20px 100px;
+            background: #f8fafc;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            font-weight: 500;
+            color: #2563eb;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            margin: 0 auto 15px;
+            font-size: 19px;
+            color: #4b5563;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-secondary {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* ===========================
+           GENERAL SECTIONS
+        =========================== */
+
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        section p {
+            max-width: 900px;
+            color: #4b5563;
+            line-height: 1.8;
+            margin: 0 auto 18px;
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===========================
+           SKILLS
+        =========================== */
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* ===========================
+           PROJECTS
+        =========================== */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .project-card a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===========================
+           FUTURE POSTS
+        =========================== */
+
+        .future-posts {
+            text-align: center;
+            background: #f8fafc;
+        }
+
+        .future-posts p {
+            max-width: 700px;
+        }
+
+        /* ===========================
+           CONTACT
+        =========================== */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===========================
+           FOOTER
+        =========================== */
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* ===========================
+           RESPONSIVE DESIGN
+        =========================== */
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 70px 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 400px;
+                max-width: 90%;
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            section h2 {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            header h1 {
+                font-size: 21px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero h2 {
+                font-size: 18px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section h2 {
+                font-size: 27px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
-
 <body>
 
+    <!-- ===========================
+         HEADER
+    =========================== -->
 
-<!-- ===========================
-     HEADER
-=========================== -->
+    <header>
 
-<header>
+        <h1>Noman Amir</h1>
 
-<h2>Noman Amir</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-<nav>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-<a href="index.html">Home</a>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
 
-<a href="about.html">About</a>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
 
-<a href="projects.html">Projects</a>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-<a href="contact.html">Contact</a>
+    </header>
 
-</nav>
 
-</header>
+    <!-- ===========================
+         HERO SECTION
+    =========================== -->
 
+    <section class="hero" id="home">
 
-<main>
+        <h1>Flutter & Web Application Developer</h1>
 
+        <h2>
+            Computer Science Student | Building Practical Mobile & Web Solutions
+        </h2>
 
-<!-- ===========================
-     HERO SECTION
-=========================== -->
+        <p>
+            I build practical mobile and web applications using Flutter,
+            APIs, databases, Firebase, and modern development tools,
+            with a focus on creating reliable and user-friendly software solutions.
+        </p>
 
-<section class="hero">
+        <p>
+            I'm a BS Computer Science student at COMSATS University Islamabad,
+            Wah Campus, with hands-on experience developing applications across
+            e-commerce, food delivery, healthcare, finance, AI, and machine learning.
+        </p>
 
-<h1>
-Flutter & Web Application Developer
-</h1>
+        <div class="hero-buttons">
 
-<h2>
-Computer Science Student | Building Practical Mobile & Web Solutions
-</h2>
+            <a href="#projects" class="btn btn-primary">
+                View My Projects
+            </a>
 
-<p>
-I build practical mobile and web applications using Flutter, APIs,
-databases, Firebase, and modern development tools, with a focus on
-creating reliable and user-friendly software solutions.
-</p>
+            <a href="#contact" class="btn btn-secondary">
+                Let's Connect
+            </a>
 
-<p class="hero-description">
-I'm a BS Computer Science student at COMSATS University Islamabad,
-Wah Campus, with hands-on experience developing applications across
-e-commerce, food delivery, healthcare, finance, AI, and machine learning.
-</p>
+        </div>
 
+    </section>
 
-<div class="hero-buttons">
 
-<a class="btn" href="projects.html">
-View My Projects
-</a>
+    <!-- ===========================
+         ABOUT SECTION
+    =========================== -->
 
-<a class="btn-secondary" href="contact.html">
-Let's Connect
-</a>
+    <section id="about">
 
-</div>
+        <h2>About Me</h2>
 
-</section>
+        <p>
+            I'm a BS Computer Science student at COMSATS University Islamabad,
+            Wah Campus, currently in my 7th semester. I focus on building
+            practical mobile and web applications that solve real-world problems.
+        </p>
 
+        <p>
+            My primary development experience is with Flutter and Dart, along with
+            REST APIs, Firebase, databases, authentication, state management,
+            and responsive application workflows. I have developed applications
+            across e-commerce, food delivery, healthcare, finance, and other
+            real-world use cases through academic and internship projects.
+        </p>
 
-<!-- ===========================
-     ABOUT SECTION
-=========================== -->
+        <p>
+            I also have experience working with Python, Machine Learning,
+            PHP, JavaScript, HTML, CSS, MongoDB, and MySQL. I continuously
+            improve my development skills by building projects and exploring
+            new technologies.
+        </p>
 
-<section>
+    </section>
 
-<h2>About Me</h2>
 
-<p>
+    <!-- ===========================
+         SKILLS SECTION
+    =========================== -->
 
-I'm a BS Computer Science student at COMSATS University Islamabad, Wah Campus.
-I enjoy solving real-world problems using AI, Flutter, Python and Web Technologies.
-My interests include Machine Learning, Mobile App Development,
-Backend Systems and Cloud Computing.
+    <section id="skills">
 
-</p>
+        <h2>Skills</h2>
 
-</section>
+        <div class="skills-container">
 
+            <span class="skill">Python</span>
+            <span class="skill">Flutter</span>
+            <span class="skill">PHP</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">GitHub</span>
 
-<!-- ===========================
-     SKILLS SECTION
-=========================== -->
+        </div>
 
-<section>
+    </section>
 
-<h2>Skills</h2>
 
-<div class="skills">
+    <!-- ===========================
+         PROJECTS SECTION
+    =========================== -->
 
-<div class="skill">Python</div>
+    <section id="projects">
 
-<div class="skill">Flutter</div>
+        <h2>Featured Projects</h2>
 
-<div class="skill">PHP</div>
+        <div class="projects">
 
-<div class="skill">MongoDB</div>
+            <div class="project-card">
 
-<div class="skill">Machine Learning</div>
+                <h3>AI Disaster Alert App</h3>
 
-<div class="skill">HTML</div>
+                <p>
+                    A Flutter-based mobile application designed for disaster
+                    reporting and emergency alerts, with a focus on helping
+                    users report incidents and access important information.
+                </p>
 
-<div class="skill">CSS</div>
+                <a href="https://github.com/nomanamir20" target="_blank">
+                    View Project
+                </a>
 
-<div class="skill">JavaScript</div>
+            </div>
 
-<div class="skill">GitHub</div>
 
-</div>
+            <div class="project-card">
 
-</section>
+                <h3>Plant Disease Detection System</h3>
 
+                <p>
+                    A machine learning-based web application for detecting
+                    plant diseases using image classification and deep learning
+                    techniques.
+                </p>
 
-<!-- ===========================
-     PROJECTS SECTION
-=========================== -->
+                <a href="https://github.com/nomanamir20" target="_blank">
+                    View Project
+                </a>
 
-<section>
+            </div>
 
-<h2>Featured Projects</h2>
 
-<div class="projects">
+            <div class="project-card">
 
+                <h3>Personal Portfolio Website</h3>
 
-<div class="card">
+                <p>
+                    A responsive personal portfolio website built with HTML
+                    and CSS and deployed using GitHub Pages.
+                </p>
 
-<h3>AI Disaster Alert App</h3>
+                <a href="https://github.com/nomanamir20/portfolio" target="_blank">
+                    View Project
+                </a>
 
-<p>
+            </div>
 
-Flutter application for disaster reporting, emergency alerts,
-live location and shelter information.
+        </div>
 
-</p>
+    </section>
 
-<a
-href="projects.html"
-aria-label="View AI Disaster Alert App project">
 
-View Project
+    <!-- ===========================
+         FUTURE POSTS / CAPSTONE
+    =========================== -->
 
-</a>
+    <section class="future-posts">
 
-</div>
+        <h2>Future Posts & Capstone</h2>
 
+        <p>
+            More project case studies, development articles, technical
+            write-ups, and my Final Year Project journey will be added here.
+        </p>
 
-<div class="card">
+    </section>
 
-<h3>Plant Disease Detection</h3>
 
-<p>
+    <!-- ===========================
+         CONTACT SECTION
+    =========================== -->
 
-Machine Learning project using TensorFlow and Flask to identify
-plant diseases from leaf images.
+    <section class="contact" id="contact">
 
-</p>
+        <h2>Let's Connect</h2>
 
-<a
-href="projects.html"
-aria-label="View Plant Disease Detection project">
+        <p>
+            Interested in working together or discussing a project?
+            Feel free to connect with me through the platforms below.
+        </p>
 
-View Project
+        <div class="contact-links">
 
-</a>
+            <a href="mailto:your-email@example.com">
+                Email
+            </a>
 
-</div>
+            <a href="https://github.com/nomanamir20" target="_blank">
+                GitHub
+            </a>
 
+            <a href="https://www.linkedin.com/" target="_blank">
+                LinkedIn
+            </a>
 
-<div class="card">
+            <a href="#" target="_blank">
+                Resume
+            </a>
 
-<h3>Personal Portfolio</h3>
+        </div>
 
-<p>
+    </section>
 
-Responsive portfolio website showcasing projects, skills and achievements.
 
-</p>
+    <!-- ===========================
+         FOOTER
+    =========================== -->
 
-<a
-href="projects.html"
-aria-label="View Personal Portfolio project">
+    <footer>
 
-View Project
+        <p>
+            © 2026 Muhammad Noman Amir. All Rights Reserved.
+        </p>
 
-</a>
+        <p>
+            Built with HTML & CSS
+        </p>
 
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ===========================
-     FUTURE POSTS
-=========================== -->
-
-<section class="future-section">
-
-<h2>Future Posts & Capstone</h2>
-
-<p>
-
-This section will be updated with my future technical blogs,
-AI projects, internship experiences, and Final Year Project (FYP)
-documentation as I continue my learning journey.
-
-</p>
-
-
-<div class="projects">
-
-<div class="card">
-
-<h3>Coming Soon</h3>
-
-<p>
-
-Technical blogs, AI experiments, project updates,
-and my capstone project will be published here.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ===========================
-     CONTACT SECTION
-=========================== -->
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>
-
-If you'd like to collaborate, discuss projects, or connect professionally,
-feel free to reach out through any of the platforms below.
-
-</p>
-
-
-<div class="contact-links">
-
-
-<a
-href="mailto:nomanamir664@gmail.com"
-class="contact-btn">
-
-📧 Email Me
-
-</a>
-
-
-<a
-href="https://github.com/nomanamir20"
-target="_blank"
-rel="noopener noreferrer"
-class="contact-btn">
-
-💻 GitHub
-
-</a>
-
-
-<a
-href="https://www.linkedin.com/in/noman-amir-995300323"
-target="_blank"
-rel="noopener noreferrer"
-class="contact-btn">
-
-💼 LinkedIn
-
-</a>
-
-
-<a
-href="resume.pdf"
-download="Noman_Amir_CV.pdf"
-class="contact-btn">
-
-📄 Download CV
-
-</a>
-
-
-</div>
-
-</section>
-
-
-</main>
-
-
-<!-- ===========================
-     FOOTER
-=========================== -->
-
-<footer>
-
-<p>
-© 2026 Muhammad Noman Amir. All Rights Reserved.
-</p>
-
-<!-- FlyRank Graduate Badge Footer Link -->
-
-<a
-href="YOUR_FLYRANK_VERIFICATION_LINK"
-target="_blank"
-rel="noopener noreferrer"
-class="flyrank-badge">
-
-<img
-src="https://aifluency.flyrank.ai/assets/badge.png"
-alt="FlyRank Graduate Badge">
-
-</a>
-
-</footer>
+    </footer>
 
 
 </body>
