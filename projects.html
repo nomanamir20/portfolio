@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Projects | Muhammad Noman Amir</title>
+
+<meta name="description"
+content="Explore Muhammad Noman Amir's Flutter, web development, AI, machine learning, and software engineering projects.">
 
 <style>
 
@@ -16,23 +20,39 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    background:#f4f7fb;
-    color:#222;
+    background:#f8fafc;
+    color:#1f2937;
     line-height:1.6;
 }
+
+/* ===========================
+   HEADER
+=========================== */
 
 header{
     background:#0f172a;
     color:white;
-    padding:18px 10%;
+    padding:18px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 header h2{
     font-size:24px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
 }
 
 nav a{
@@ -40,16 +60,22 @@ nav a{
     text-decoration:none;
     margin-left:25px;
     font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
     color:#38bdf8;
 }
 
+/* ===========================
+   HERO
+=========================== */
+
 .hero{
     background:white;
     text-align:center;
-    padding:80px 20px;
+    padding:90px 20px;
+    border-bottom:1px solid #e5e7eb;
 }
 
 .hero h1{
@@ -58,16 +84,48 @@ nav a:hover{
     margin-bottom:15px;
 }
 
+.hero h2{
+    font-size:22px;
+    color:#2563eb;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
 .hero p{
-    font-size:19px;
-    color:#555;
-    max-width:750px;
+    font-size:18px;
+    color:#4b5563;
+    max-width:850px;
     margin:auto;
 }
 
+/* ===========================
+   PROJECT SECTION
+=========================== */
+
 section{
-    padding:70px 10%;
+    padding:70px 8%;
 }
+
+.projects-intro{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 45px;
+}
+
+.projects-intro h2{
+    font-size:32px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.projects-intro p{
+    color:#4b5563;
+    font-size:17px;
+}
+
+/* ===========================
+   PROJECT GRID
+=========================== */
 
 .projects{
     display:grid;
@@ -75,46 +133,82 @@ section{
     gap:30px;
 }
 
+/* ===========================
+   PROJECT CARD
+=========================== */
+
 .card{
     background:white;
     padding:30px;
     border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
     transition:.3s;
+    display:flex;
+    flex-direction:column;
 }
 
 .card:hover{
     transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.09);
 }
 
 .card h3{
     color:#0f172a;
-    margin-bottom:15px;
+    margin-bottom:12px;
+    font-size:22px;
 }
 
 .card p{
-    color:#555;
+    color:#4b5563;
     margin-bottom:20px;
+    font-size:15.5px;
 }
 
+/* ===========================
+   PROJECT CATEGORY
+=========================== */
+
+.category{
+    display:inline-block;
+    align-self:flex-start;
+    background:#eff6ff;
+    color:#2563eb;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   TECHNOLOGIES
+=========================== */
+
 .tech{
+    margin-top:auto;
     margin-bottom:20px;
 }
 
 .tech span{
     display:inline-block;
-    background:#e0f2fe;
-    color:#0369a1;
+    background:#eff6ff;
+    color:#1d4ed8;
     padding:6px 12px;
     border-radius:20px;
-    font-size:14px;
-    margin:5px;
+    font-size:13px;
+    margin:4px;
 }
+
+/* ===========================
+   PROJECT LINKS
+=========================== */
 
 .project-links{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
+    margin-top:auto;
 }
 
 .btn{
@@ -122,7 +216,7 @@ section{
     background:#2563eb;
     color:white;
     text-decoration:none;
-    padding:12px 25px;
+    padding:11px 20px;
     border-radius:8px;
     font-weight:bold;
     transition:.3s;
@@ -137,7 +231,7 @@ section{
     background:white;
     color:#2563eb;
     text-decoration:none;
-    padding:10px 23px;
+    padding:9px 18px;
     border:2px solid #2563eb;
     border-radius:8px;
     font-weight:bold;
@@ -149,12 +243,36 @@ section{
     color:white;
 }
 
+/* ===========================
+   PROJECT NOTE
+=========================== */
+
+.project-note{
+    margin-top:45px;
+    padding:25px;
+    background:#f1f5f9;
+    border-left:4px solid #2563eb;
+    border-radius:8px;
+}
+
+.project-note p{
+    color:#475569;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
 footer{
     background:#0f172a;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:25px 20px;
 }
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
 
 @media(max-width:768px){
 
@@ -165,20 +283,26 @@ footer{
     }
 
     nav{
-        text-align:center;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
     }
 
     nav a{
-        margin:0 8px;
+        margin-left:0;
         font-size:14px;
     }
 
     .hero{
-        padding:60px 20px;
+        padding:70px 20px;
     }
 
     .hero h1{
-        font-size:38px;
+        font-size:40px;
+    }
+
+    .hero h2{
+        font-size:19px;
     }
 
     .hero p{
@@ -186,7 +310,45 @@ footer{
     }
 
     section{
-        padding:50px 5%;
+        padding:55px 5%;
+    }
+
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:480px){
+
+    header h2{
+        font-size:21px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero h2{
+        font-size:18px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .project-links{
+        flex-direction:column;
+    }
+
+    .project-links .btn,
+    .project-links .btn-secondary{
+        width:100%;
+        text-align:center;
     }
 
 }
@@ -197,64 +359,113 @@ footer{
 
 <body>
 
+
+<!-- ===========================
+     HEADER
+=========================== -->
+
 <header>
 
 <h2>Noman Amir</h2>
 
 <nav>
+
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="projects.html">Projects</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 </header>
 
 
+<!-- ===========================
+     HERO
+=========================== -->
+
 <section class="hero">
 
 <h1>My Projects</h1>
 
+<h2>Mobile, Web, AI & Software Development</h2>
+
 <p>
-Here are some of my academic, internship, and personal projects that demonstrate
-my experience in Artificial Intelligence, Machine Learning, Flutter Mobile App
-Development, and Software Engineering.
+
+A selection of applications and software projects developed through
+internships, university coursework, and personal development. My main
+focus is building practical Flutter and web applications with real-world
+features and technologies.
+
 </p>
 
 </section>
 
 
+<!-- ===========================
+     PROJECTS
+=========================== -->
+
 <section>
+
+<div class="projects-intro">
+
+<h2>Featured Projects</h2>
+
+<p>
+
+These projects demonstrate my hands-on experience with Flutter,
+Firebase, REST APIs, databases, authentication, state management,
+web technologies, Artificial Intelligence, and Machine Learning.
+
+</p>
+
+</div>
+
 
 <div class="projects">
 
 
-<!-- Project 1 -->
+<!-- ===========================
+     PROJECT 1
+=========================== -->
 
 <div class="card">
 
-<h3>Plant Disease Detection System</h3>
+<span class="category">
+Flutter • E-Commerce
+</span>
+
+<h3>E-Commerce App</h3>
 
 <p>
-A Machine Learning-powered web application that identifies plant diseases
-from leaf images. The system uses a MobileNetV2 CNN model, compares multiple
-Machine Learning algorithms, provides Grad-CAM explainability, and stores
-prediction history.
+
+A complete Flutter e-commerce application developed independently
+with features including product browsing, authentication, shopping
+cart functionality, order workflows, Firebase integration, REST APIs,
+state management, and push notifications.
+
 </p>
 
 <div class="tech">
-<span>Python</span>
-<span>TensorFlow</span>
-<span>Flask</span>
-<span>PHP</span>
-<span>MySQL</span>
-<span>Machine Learning</span>
+
+<span>Flutter</span>
+<span>Dart</span>
+<span>Firebase</span>
+<span>REST API</span>
+<span>Riverpod</span>
+<span>FCM</span>
+
 </div>
 
 <div class="project-links">
 
-<a href="plant-disease-detection.html" class="btn">
+<a href="#" class="btn">
 View Project
+</a>
+
+<a href="#" class="btn-secondary">
+GitHub
 </a>
 
 </div>
@@ -262,23 +473,179 @@ View Project
 </div>
 
 
-<!-- Project 2 -->
+<!-- ===========================
+     PROJECT 2
+=========================== -->
 
 <div class="card">
+
+<span class="category">
+Flutter • Food Delivery
+</span>
+
+<h3>Food Delivery App</h3>
+
+<p>
+
+A complete food delivery application developed independently using
+Flutter. The application includes food discovery, location services,
+restaurant and meal information, coupons, notifications, and
+user-focused ordering workflows.
+
+</p>
+
+<div class="tech">
+
+<span>Flutter</span>
+<span>Dart</span>
+<span>Firebase</span>
+<span>BLoC</span>
+<span>TheMealDB API</span>
+<span>OpenStreetMap</span>
+<span>FCM</span>
+
+</div>
+
+<div class="project-links">
+
+<a href="#" class="btn">
+View Project
+</a>
+
+<a href="#" class="btn-secondary">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ===========================
+     PROJECT 3
+=========================== -->
+
+<div class="card">
+
+<span class="category">
+Flutter • Healthcare
+</span>
+
+<h3>Hospital Appointment App</h3>
+
+<p>
+
+A healthcare appointment application developed independently with
+Flutter. The application supports appointment management, Firebase
+integration, video consultation functionality, QR-based workflows,
+and PDF-related features for a more complete healthcare experience.
+
+</p>
+
+<div class="tech">
+
+<span>Flutter</span>
+<span>Dart</span>
+<span>Firebase</span>
+<span>GetX</span>
+<span>Jitsi</span>
+<span>QR Code</span>
+<span>PDF</span>
+
+</div>
+
+<div class="project-links">
+
+<a href="#" class="btn">
+View Project
+</a>
+
+<a href="#" class="btn-secondary">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ===========================
+     PROJECT 4
+=========================== -->
+
+<div class="card">
+
+<span class="category">
+Flutter • Productivity
+</span>
+
+<h3>Expense Tracker</h3>
+
+<p>
+
+A personal expense management application developed with Flutter
+for recording, organizing, and visualizing financial activities.
+The project includes local storage, Firebase integration, charts,
+notifications, and PDF-related functionality.
+
+</p>
+
+<div class="tech">
+
+<span>Flutter</span>
+<span>Dart</span>
+<span>GetX</span>
+<span>Hive</span>
+<span>Firebase</span>
+<span>fl_chart</span>
+<span>PDF</span>
+
+</div>
+
+<div class="project-links">
+
+<a href="#" class="btn">
+View Project
+</a>
+
+<a href="#" class="btn-secondary">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ===========================
+     PROJECT 5
+=========================== -->
+
+<div class="card">
+
+<span class="category">
+AI • Mobile Application
+</span>
 
 <h3>AI Disaster Alert App</h3>
 
 <p>
-An AI-powered disaster early warning application developed for Pakistan.
-The project focuses on emergency reporting, disaster alerts, location-based
-services, and improving public safety through intelligent technologies.
+
+An AI-powered disaster reporting and emergency alert application
+developed for Pakistan. The project focuses on disaster reporting,
+emergency communication, location-based services, and improving
+access to important safety information.
+
 </p>
 
 <div class="tech">
+
 <span>Flutter</span>
+<span>Dart</span>
 <span>AI</span>
 <span>Mobile Development</span>
-<span>Disaster Management</span>
+<span>Location Services</span>
+
 </div>
 
 <div class="project-links">
@@ -299,30 +666,43 @@ GitHub
 </div>
 
 
-<!-- Project 3 -->
+<!-- ===========================
+     PROJECT 6
+=========================== -->
 
 <div class="card">
 
-<h3>InternGrow Auth Onboarding App</h3>
+<span class="category">
+Machine Learning • Web
+</span>
+
+<h3>Plant Disease Detection System</h3>
 
 <p>
-A Flutter application created during the InternGrow Internship that implements
-user authentication, onboarding screens, and a clean mobile user experience.
+
+A machine learning-powered web application that identifies plant
+diseases from leaf images. The system uses a MobileNetV2 CNN model,
+compares multiple machine learning algorithms, provides Grad-CAM
+explainability, and stores prediction history.
+
 </p>
 
 <div class="tech">
-<span>Flutter</span>
-<span>Dart</span>
-<span>Firebase</span>
-<span>Mobile Development</span>
+
+<span>Python</span>
+<span>TensorFlow</span>
+<span>Keras</span>
+<span>MobileNetV2</span>
+<span>Flask</span>
+<span>PHP</span>
+<span>MySQL</span>
+
 </div>
 
 <div class="project-links">
-<a href="interngrow-auth-onboarding.html"
-class="btn">
 
+<a href="plant-disease-detection.html" class="btn">
 View Project
-
 </a>
 
 </div>
@@ -330,23 +710,33 @@ View Project
 </div>
 
 
-<!-- Project 4 -->
+<!-- ===========================
+     PROJECT 7
+=========================== -->
 
 <div class="card">
+
+<span class="category">
+AI • Software Application
+</span>
 
 <h3>AI-Powered Mental Health Journal</h3>
 
 <p>
-A personal AI-assisted journal application designed to help users record
-thoughts, emotions, and daily experiences while supporting mental wellness
-through AI-assisted interaction.
+
+An AI-assisted journaling application designed to help users record
+their thoughts, emotions, and daily experiences while providing
+AI-assisted interaction and a structured digital journaling experience.
+
 </p>
 
 <div class="tech">
-<span>AI</span>
+
 <span>Python</span>
-<span>Healthcare</span>
+<span>AI</span>
+<span>Machine Learning</span>
 <span>Software Development</span>
+
 </div>
 
 <div class="project-links">
@@ -363,23 +753,34 @@ View on GitHub
 </div>
 
 
-<!-- Project 5 -->
+<!-- ===========================
+     PROJECT 8
+=========================== -->
 
 <div class="card">
+
+<span class="category">
+Machine Learning • Internship
+</span>
 
 <h3>FlyRank ML Internship</h3>
 
 <p>
-Machine Learning work completed during the FlyRank AI Internship, covering
-practical data preprocessing, feature engineering, task framing, baseline
-development, model training, evaluation, and AI experimentation.
+
+Practical machine learning work completed during the FlyRank AI
+Internship, covering data preprocessing, feature engineering,
+task framing, baseline development, model training, evaluation,
+and AI experimentation.
+
 </p>
 
 <div class="tech">
-<span>Machine Learning</span>
+
 <span>Python</span>
+<span>Machine Learning</span>
 <span>Jupyter Notebook</span>
 <span>Data Science</span>
+
 </div>
 
 <div class="project-links">
@@ -396,23 +797,34 @@ View on GitHub
 </div>
 
 
-<!-- Project 6 -->
+<!-- ===========================
+     PROJECT 9
+=========================== -->
 
 <div class="card">
+
+<span class="category">
+Web Development
+</span>
 
 <h3>Personal Portfolio Website</h3>
 
 <p>
-A responsive personal portfolio website built using HTML and CSS to showcase
-my projects, technical skills, internship experience, and professional journey.
-The website is deployed using GitHub Pages.
+
+A responsive personal portfolio website developed using HTML and CSS
+to showcase my projects, technical skills, experience, and professional
+journey. The website is deployed using GitHub Pages.
+
 </p>
 
 <div class="tech">
+
 <span>HTML</span>
 <span>CSS</span>
+<span>Git</span>
 <span>GitHub</span>
 <span>GitHub Pages</span>
+
 </div>
 
 <div class="project-links">
@@ -431,14 +843,38 @@ View on GitHub
 
 </div>
 
+
+<!-- ===========================
+     PROJECT NOTE
+=========================== -->
+
+<div class="project-note">
+
+<p>
+
+<strong>Note:</strong> My current development focus is Flutter and
+web application development. AI and Machine Learning projects are
+included to demonstrate my broader technical background.
+
+</p>
+
+</div>
+
 </section>
 
 
+<!-- ===========================
+     FOOTER
+=========================== -->
+
 <footer>
 
-<p>© 2026 Muhammad Noman Amir. All Rights Reserved.</p>
+<p>
+© 2026 Muhammad Noman Amir. All Rights Reserved.
+</p>
 
 </footer>
+
 
 </body>
 
