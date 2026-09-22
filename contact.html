@@ -8,214 +8,356 @@
 
 <title>Contact | Muhammad Noman Amir</title>
 
+<meta name="description"
+content="Contact Muhammad Noman Amir for software development projects, Flutter applications, web applications, internships, and collaboration opportunities.">
+
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#f4f7fb;
-color:#222;
-line-height:1.6;
+    background:#f8fafc;
+    color:#1f2937;
+    line-height:1.6;
 }
 
+/* ===========================
+   HEADER
+=========================== */
+
 header{
-background:#0f172a;
-padding:18px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    background:#0f172a;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 header h2{
-color:white;
-font-size:24px;
+    color:white;
+    font-size:24px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
-color:#38bdf8;
+    color:#38bdf8;
 }
 
+/* ===========================
+   HERO
+=========================== */
+
 .hero{
-background:white;
-text-align:center;
-padding:80px 20px;
+    background:white;
+    text-align:center;
+    padding:90px 20px;
+    border-bottom:1px solid #e5e7eb;
 }
 
 .hero h1{
-font-size:48px;
-color:#0f172a;
-margin-bottom:15px;
+    font-size:48px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:22px;
+    color:#2563eb;
+    font-weight:500;
+    margin-bottom:20px;
 }
 
 .hero p{
-font-size:19px;
-color:#555;
-max-width:800px;
-margin:auto;
+    font-size:18px;
+    color:#4b5563;
+    max-width:850px;
+    margin:auto;
 }
 
+/* ===========================
+   GENERAL SECTION
+=========================== */
+
 section{
-padding:70px 10%;
+    padding:70px 8%;
 }
 
 .section-title{
-font-size:32px;
-margin-bottom:30px;
-color:#0f172a;
-text-align:center;
+    font-size:32px;
+    margin-bottom:30px;
+    color:#0f172a;
+    text-align:center;
 }
+
+/* ===========================
+   CONTACT GRID
+=========================== */
 
 .contact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-bottom:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    max-width:1100px;
+    margin:0 auto 70px;
 }
 
+/* ===========================
+   CONTACT CARDS
+=========================== */
+
 .card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-text-align:center;
-transition:.3s;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    text-align:center;
+    transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .card h3{
-margin-bottom:15px;
-color:#2563eb;
+    margin-bottom:15px;
+    color:#2563eb;
+    font-size:21px;
 }
 
 .card p{
-margin-bottom:20px;
-color:#555;
+    margin-bottom:20px;
+    color:#4b5563;
 }
 
 .card a{
-display:inline-block;
-padding:12px 22px;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-transition:.3s;
+    display:inline-block;
+    padding:11px 22px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .card a:hover{
-background:#1d4ed8;
+    background:#1d4ed8;
 }
 
+/* ===========================
+   CONTACT FORM
+=========================== */
+
 .contact-form{
-background:white;
-padding:35px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-max-width:700px;
-margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    max-width:700px;
+    margin:auto;
 }
 
 .contact-form h3{
-margin-bottom:25px;
-text-align:center;
-color:#2563eb;
+    margin-bottom:25px;
+    text-align:center;
+    color:#0f172a;
+    font-size:24px;
+}
+
+.contact-form p{
+    text-align:center;
+    color:#4b5563;
+    margin-bottom:25px;
 }
 
 .contact-form input,
 .contact-form textarea{
-width:100%;
-padding:15px;
-margin-bottom:20px;
-border:1px solid #ccc;
-border-radius:8px;
-font-size:16px;
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.1);
 }
 
 .contact-form textarea{
-height:150px;
-resize:vertical;
+    height:160px;
+    resize:vertical;
 }
 
 .contact-form button{
-width:100%;
-padding:15px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:8px;
-font-size:17px;
-font-weight:bold;
-cursor:pointer;
-transition:.3s;
+    width:100%;
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .contact-form button:hover{
-background:#1d4ed8;
+    background:#1d4ed8;
 }
+
+/* ===========================
+   NOTE
+=========================== */
 
 .note{
-text-align:center;
-margin-top:20px;
-color:#666;
-font-size:14px;
+    text-align:center;
+    margin-top:18px;
+    color:#64748b;
+    font-size:14px;
 }
 
-footer{
-margin-top:70px;
-background:#0f172a;
-color:white;
-text-align:center;
-padding:25px;
+/* ===========================
+   CTA
+=========================== */
+
+.contact-cta{
+    text-align:center;
+    max-width:800px;
+    margin:60px auto 0;
 }
+
+.contact-cta h2{
+    color:#0f172a;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.contact-cta p{
+    color:#4b5563;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:40px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px 20px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
-gap:15px;
-padding:18px 5%;
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:18px 5%;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav a{
+        margin-left:0;
+        font-size:14px;
+    }
+
+    .hero{
+        padding:70px 20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero h2{
+        font-size:19px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+    .section-title{
+        font-size:29px;
+    }
+
 }
 
-nav{
-text-align:center;
-}
+@media(max-width:480px){
 
-nav a{
-margin:0 8px;
-font-size:14px;
-}
+    header h2{
+        font-size:21px;
+    }
 
-.hero{
-padding:60px 20px;
-}
+    .hero h1{
+        font-size:32px;
+    }
 
-.hero h1{
-font-size:38px;
-}
+    .hero h2{
+        font-size:18px;
+    }
 
-.hero p{
-font-size:17px;
-}
+    .hero p{
+        font-size:16px;
+    }
 
-section{
-padding:50px 5%;
-}
+    .contact-form{
+        padding:22px;
+    }
+
+    .card{
+        padding:24px;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
 
 }
 
@@ -224,6 +366,11 @@ padding:50px 5%;
 </head>
 
 <body>
+
+
+<!-- ===========================
+     HEADER
+=========================== -->
 
 <header>
 
@@ -241,20 +388,30 @@ padding:50px 5%;
 </header>
 
 
+<!-- ===========================
+     HERO
+=========================== -->
+
 <section class="hero">
 
 <h1>Let's Connect</h1>
 
+<h2>Have a Project or Opportunity?</h2>
+
 <p>
 
-I'm always open to discussing internships, software projects,
-Artificial Intelligence, Flutter development, and exciting collaboration
-opportunities. Feel free to reach out through any of the platforms below.
+I'm open to discussing software development projects, Flutter and web
+applications, internships, freelance opportunities, and professional
+collaborations.
 
 </p>
 
 </section>
 
+
+<!-- ===========================
+     CONTACT INFORMATION
+=========================== -->
 
 <section>
 
@@ -266,12 +423,14 @@ Contact Information
 <div class="contact-grid">
 
 
+<!-- EMAIL -->
+
 <div class="card">
 
 <h3>📧 Email</h3>
 
 <p>
-Have a question or opportunity?
+For project inquiries, opportunities, or general questions.
 </p>
 
 <a href="mailto:nomanamir664@gmail.com">
@@ -281,15 +440,18 @@ Email Me
 </div>
 
 
+<!-- GITHUB -->
+
 <div class="card">
 
 <h3>💻 GitHub</h3>
 
 <p>
-Explore my projects and repositories.
+Explore my applications, source code, and development projects.
 </p>
 
-<a href="https://github.com/nomanamir20"
+<a
+href="https://github.com/nomanamir20"
 target="_blank"
 rel="noopener noreferrer">
 
@@ -300,15 +462,18 @@ Visit GitHub
 </div>
 
 
+<!-- LINKEDIN -->
+
 <div class="card">
 
 <h3>💼 LinkedIn</h3>
 
 <p>
-Let's connect professionally.
+Connect with me professionally and explore my experience.
 </p>
 
-<a href="https://www.linkedin.com/in/noman-amir-995300323"
+<a
+href="https://www.linkedin.com/in/noman-amir-995300323"
 target="_blank"
 rel="noopener noreferrer">
 
@@ -319,18 +484,22 @@ View Profile
 </div>
 
 
+<!-- RESUME -->
+
 <div class="card">
 
 <h3>📄 Resume</h3>
 
 <p>
-Download my latest CV.
+View or download my latest professional resume.
 </p>
 
-<a href="resume.pdf"
-target="_blank">
+<a
+href="resume.pdf"
+target="_blank"
+rel="noopener noreferrer">
 
-Download CV
+View Resume
 
 </a>
 
@@ -340,6 +509,10 @@ Download CV
 </div>
 
 
+<!-- ===========================
+     CONTACT FORM
+=========================== -->
+
 <h2 class="section-title">
 Send Me a Message
 </h2>
@@ -348,6 +521,11 @@ Send Me a Message
 <div class="contact-form">
 
 <h3>Contact Form</h3>
+
+<p>
+Have a project idea or opportunity? Send me a message directly.
+</p>
+
 
 <form
 action="https://formspree.io/f/xzepjgvw"
@@ -370,7 +548,7 @@ required
 
 <textarea
 name="message"
-placeholder="Write your message here..."
+placeholder="Tell me about your project or opportunity..."
 required
 ></textarea>
 
@@ -380,9 +558,28 @@ Send Message
 
 </form>
 
+
 <p class="note">
 
-Your message will be sent securely through the contact form.
+Your message will be delivered through the configured contact form service.
+
+</p>
+
+</div>
+
+
+<!-- ===========================
+     CALL TO ACTION
+=========================== -->
+
+<div class="contact-cta">
+
+<h2>Let's Build Something Useful</h2>
+
+<p>
+
+Whether you're looking for a Flutter mobile application, a web application,
+or software development collaboration, feel free to get in touch.
 
 </p>
 
@@ -392,6 +589,10 @@ Your message will be sent securely through the contact form.
 </section>
 
 
+<!-- ===========================
+     FOOTER
+=========================== -->
+
 <footer>
 
 <p>
@@ -399,6 +600,7 @@ Your message will be sent securely through the contact form.
 </p>
 
 </footer>
+
 
 </body>
 
